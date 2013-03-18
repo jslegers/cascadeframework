@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" media="all"  href="assets/css/cascade/production/build-full.min.css" />
+        <link rel="stylesheet" type="text/css" media="all"  href="assets/css/site.css" />
+        <!--[if lt IE 8]><link rel="stylesheet" href="assets/css/cascade/production/icons-ie7.min.css"><![endif]-->
+        <!--[if lt IE 9]><script src="assets/js/lib/polyfills/iehtmlshiv.js"></script><![endif]-->
+        <title>Cascade Framework</title>
+        <meta name="description" content="Professional Frontend framework that makes building websites easier than ever.">
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width">
+        <style type="text/css">
+            .sidebar {
+                width:20%;
+                min-width:130px;
+            }
+
+            .pageheader section, .pagefooter section {
+                width:80%;
+                float:right;
+            }
+
+            footer.site-footer {
+                border-top-width: 1px;
+                margin-top:-1px;
+            }
+
+            .sitecontent {
+                display:table-cell;
+                float:none;
+                _float:left;
+                width:10000px;
+                *width:auto;
+            }
+
+            .blogpost section {
+                margin:6px 0;
+            }
+
+            .blogpost footer {
+                font-style: italic;
+            }
+
+            .blogpost {
+                border-bottom-width: 1px;
+            }
+
+            .site-body .site-body {
+                margin:0;
+            }
+
+            .layout-demo .cell {
+                background-image: url('assets/img/alpha-10.png');
+                padding:2px 4px;
+                border-radius:6px;
+            }
+        </style>
+    </head>
+    <body class="narrow">
+        <div class="site-center">
+            <div class="site-body">
+                <div class="site-header">
+                    <div class="tags sitemenutags">
+                        <div class="cell">
+                            <ul class="nav blocks">
+                                <li class=""><a href="https://github.com/jslegers/cascadeframework/archive/master.zip" class="">Download v1.0</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col sizefill sitemenu">
+                        <div class="col sizefit mobile-sizefit">
+                            <div class="cell">
+                                <a href="index.html" class="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col sizefill mobile-sizefill">
+                            <div class="cell">
+                                <ul class="nav">
+                                    <li class="active"><a href="grid.html">Grid</a></li>
+                                    <li><a href="typography.html">Typography</a></li>
+                                    <li><a href="icons.html">Icons</a></li>
+                                    <li><a href="components.html">Components</a></li>
+                                    <li><a href="templates.html">Templates</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="cell">
+                        <div class="col">
+                            <div class="cell">
+                                <div class="page-header">
+                                    <h1>Grid <small>documentation</small></h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col size1of4">
+                            <div class="cell menu">
+                                <span class="tiny">Grid types</span>
+                                <ul class="left nav links">
+                                    <li class="active"><a href="grid.html">Semantic grid</a></li>
+                                    <li><a href="grid-presentational.html">Presentational grid</a></li>
+                                    <li><a href="grid-mediaobject.html">Media object</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col sizefill">
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="col">
+                                <div class="cell">
+                                    <h2>Semantic grid elements</h2>
+                                    <p>
+                                        Cascade framework provides the following normalised default behavior for the section, article, header, footer, aside and nav elements,
+                                        to make it easier for these elements to use them for defining your grid :
+                                    </p>
+                                    <ul>
+                                        <li>block display</li>
+                                        <li>clearfixing</li>
+                                        <li>left float</li>
+                                        <li>minimum height of 1px</li>
+                                        <li>100% width</li>
+                                        <li>100% max-width</li>
+                                    </ul>
+                                    <p>
+                                        Herebelow is an example of a common website layout, illustrating the use of these elements.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="cell panel">
+                                    <div class="body">
+                                        <div class="cell layout-demo">
+                                            <header>
+                                                <div class="cell">
+                                                    header
+                                                    <nav>
+                                                        <div class="cell">
+                                                            <ul class="nav"><li>nav</li></ul>
+                                                        </div>
+                                                    </nav>
+                                                </div>
+                                            </header>
+                                            <section>
+                                                <div class="cell">
+                                                    section
+                                                    <section>
+                                                        <aside class="size1of4">
+                                                            <div class="cell">
+                                                                aside
+                                                                <nav>
+                                                                    <div class="cell">
+                                                                        <ul class="nav"><li>nav</li></ul>
+                                                                    </div>
+                                                                </nav>
+                                                                <nav>
+                                                                    <div class="cell">
+                                                                        <ul class="nav"><li>nav</li></ul>
+                                                                    </div>
+                                                                </nav>
+                                                            </div>
+                                                        </aside>
+                                                        <section class="sizefill">
+                                                            <div class="cell">
+                                                                section
+                                                                <section>
+                                                                    <div class="cell">
+                                                                        section
+                                                                    </div>
+                                                                </section>
+                                                                <section>
+                                                                    <div class="cell">
+                                                                        section
+                                                                    </div>
+                                                                </section>
+                                                                <section>
+                                                                    <div class="cell">
+                                                                        section
+                                                                    </div>
+                                                                </section>
+                                                            </div>
+                                                        </section>
+                                                    </section>
+                                                </div>
+                                            </section>
+                                            <footer>
+                                                <div class="cell">
+                                                    footer
+                                                    <nav>
+                                                        <div class="cell">
+                                                            <ul class="nav"><li>nav</li></ul>
+                                                        </div>
+                                                    </nav>
+                                                </div>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="col">
+                                <div class="cell">
+                                    <h2>Refining your layout</h2>
+                                    <p>
+                                        The generic "cell" class further provides a default padding that can be used as a child for your grid cells to provide a default
+                                        responsive gutter across your page.
+                                    </p>
+                                    <p>
+                                        You can easily define your grid by adding your own custom styling rules as shown in the example below.
+                                    </p>
+                                    <p>
+                                        If you need to support IE<9, you will need to add a shiv to allow the section, article, header, footer, aside and nav elements to be styled.<br />
+                                        Cascade Framework comes packed with a file called iehtmlshiv.js that is used for this example and combines the following shivs :
+                                    </p>
+                                    <ul>
+                                        <li><a href="https://github.com/aFarkas/html5shiv/blob/master/src/html5shiv-printshiv.js">Html5shiv + Printshiv</a></li>
+                                        <li><a href="http://www.calormen.com/polyfill/polyfill.js">Browser Compat & ECMAScript 5 Polyfill</a></li>
+                                    </ul>
+                                    <p>
+                                        The latter shiv further enhances your old IE by adding missing Ecmascript5 features and is a dependency used by the console shiv also included in the
+                                        framework, which offers console support to these same browsers.<br />
+                                        It is recommended to use conditional comments in your HTML head tag for adding these polyfills to avoid them being loaded in modern browsers while providing an optimal user experience in old IE.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="cell panel">
+                                    <div class="body">
+                                        <div class="cell">
+                                            <div class="col">
+                                                <div class="cell">
+                                                    <header class="pageheader">
+                                                        <section>
+                                                            <div class="cell">
+                                                                <h2>Basic blog layout</h2>
+                                                            </div>
+                                                        </section>
+                                                    </header>
+                                                    <aside class="sidebar">
+                                                        <div class="cell">
+                                                            <nav class="menu">
+                                                                <ul class="left links nav">
+                                                                    <li class="active"><a href="#">Blog</a></li>
+                                                                    <li><a href="#">Resources</a></li>
+                                                                    <li><a href="#">About</a></li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                    </aside>
+                                                    <section class="sitecontent">
+                                                        <section class="blogpost">
+                                                            <div class="cell">
+                                                                <header>
+                                                                    <h3>Cascade Framework makes webdesign easier than ever!</h3>
+                                                                </header>
+                                                                <section>
+                                                                    Cascade Framework is a new CSS Framework that offers you everything you need to build
+                                                                    professional cross-browser websites in no time. It's modular architecture further ... <a href="#">[ read more ]</a>
+                                                                </section>
+                                                                <footer>
+                                                                    Wednesday 13<sup>th</sup> march, 2013
+                                                                </footer>
+                                                            </div>
+                                                        </section>
+                                                        <section class="blogpost">
+                                                            <div class="cell">
+                                                                <header>
+                                                                    <h3>Cascade Framework makes webdesign easier than ever!</h3>
+                                                                </header>
+                                                                <section>
+                                                                    Cascade Framework is a new CSS Framework that offers you everything you need to build
+                                                                    professional cross-browser websites in no time. It's modular architecture further ... <a href="#">[ read more ]</a>
+                                                                </section>
+                                                                <footer>
+                                                                    Wednesday 13<sup>th</sup> march, 2013
+                                                                </footer>
+                                                            </div>
+                                                        </section>
+                                                        <section class="blogpost">
+                                                            <div class="cell">
+                                                                <header>
+                                                                    <h3>Cascade Framework makes webdesign easier than ever!</h3>
+                                                                </header>
+                                                                <section>
+                                                                    Cascade Framework is a new CSS Framework that offers you everything you need to build
+                                                                    professional cross-browser websites in no time. It's modular architecture further ... <a href="#">[ read more ]</a>
+                                                                </section>
+                                                                <footer>
+                                                                    Wednesday 13<sup>th</sup> march, 2013
+                                                                </footer>
+                                                            </div>
+                                                        </section>
+                                                    </section>
+                                                    <footer class="pagefooter">
+                                                        <section>
+                                                            <div class="cell">
+                                                                <nav class="pipes">
+                                                                    <ul class="nav">
+                                                                        <li><a href="#">Sitemap</a></li>
+                                                                        <li><a href="#">About</a></li>
+                                                                        <li><a href="#">Contact us</a></li>
+                                                                    </ul>
+                                                                </nav>
+                                                            </div>
+                                                        </section>
+                                                    </footer>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="col">
+                                <div class="cell">
+                                    <h2>Site header and footer</h2>
+                                    <p>
+                                        The "site-header" and "site-footer" classes provide additional styles for your site's header and footer.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="cell panel">
+                                    <div class="body">
+                                        <div class="cell">
+                                            <div class="col">
+                                                <div class="cell">
+                                                    <header class="pageheader site-header">
+                                                        <section>
+                                                            <div class="cell">
+                                                                <h2>Basic blog layout</h2>
+                                                            </div>
+                                                        </section>
+                                                    </header>
+                                                    <aside class="sidebar">
+                                                        <div class="cell">
+                                                            <nav class="menu">
+                                                                <ul class="left links nav">
+                                                                    <li class="active"><a href="#">Blog</a></li>
+                                                                    <li><a href="#">Resources</a></li>
+                                                                    <li><a href="#">About</a></li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                    </aside>
+                                                    <section class="sitecontent site-body">
+                                                        <section class="blogpost">
+                                                            <div class="cell">
+                                                                <header>
+                                                                    <h3>Cascade Framework makes webdesign easier than ever!</h3>
+                                                                </header>
+                                                                <section>
+                                                                    Cascade Framework is a new CSS Framework that offers you everything you need to build
+                                                                    professional cross-browser websites in no time. It's modular architecture further ... <a href="#">[ read more ]</a>
+                                                                </section>
+                                                                <footer>
+                                                                    Wednesday 13<sup>th</sup> march, 2013
+                                                                </footer>
+                                                            </div>
+                                                        </section>
+                                                        <section class="blogpost">
+                                                            <div class="cell">
+                                                                <header>
+                                                                    <h3>Cascade Framework makes webdesign easier than ever!</h3>
+                                                                </header>
+                                                                <section>
+                                                                    Cascade Framework is a new CSS Framework that offers you everything you need to build
+                                                                    professional cross-browser websites in no time. It's modular architecture further ... <a href="#">[ read more ]</a>
+                                                                </section>
+                                                                <footer>
+                                                                    Wednesday 13<sup>th</sup> march, 2013
+                                                                </footer>
+                                                            </div>
+                                                        </section>
+                                                        <section class="blogpost">
+                                                            <div class="cell">
+                                                                <header>
+                                                                    <h3>Cascade Framework makes webdesign easier than ever!</h3>
+                                                                </header>
+                                                                <section>
+                                                                    Cascade Framework is a new CSS Framework that offers you everything you need to build
+                                                                    professional cross-browser websites in no time. It's modular architecture further ... <a href="#">[ read more ]</a>
+                                                                </section>
+                                                                <footer>
+                                                                    Wednesday 13<sup>th</sup> march, 2013
+                                                                </footer>
+                                                            </div>
+                                                        </section>
+                                                    </section>
+                                                    <footer class="pagefooter site-footer">
+                                                        <section>
+                                                            <div class="cell">
+                                                                <nav class="pipes">
+                                                                    <ul class="nav">
+                                                                        <li><a href="#">Sitemap</a></li>
+                                                                        <li><a href="#">About</a></li>
+                                                                        <li><a href="#">Contact us</a></li>
+                                                                    </ul>
+                                                                </nav>
+                                                            </div>
+                                                        </section>
+                                                    </footer>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer">
+                <div class="cell">
+                    <div id="sociallogos">
+                        <a href="https://twitter.com/cascadecss"><span class="icon icon-32 icon-twitter"></span></a>
+                        <a href="http://www.facebook.com/cascadeframework"><span class="icon icon-32 icon-facebook-sign"></span></a>
+                        <a href="https://github.com/CascadeFramework"><span class="icon icon-32 icon-github"></span></a>
+                        <div class="col">
+                            &#169; 2013, <a href="https://twitter.com/johnslegers">John Slegers</a>
+                        </div>
+                    </div>
+                    <a href="index.html" class="powered-by"></a>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>

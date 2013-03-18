@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" media="all"  href="assets/css/cascade/production/build-full.min.css" />
+        <link rel="stylesheet" type="text/css" media="all"  href="assets/css/site.css" />
+        <!--[if lt IE 8]><link rel="stylesheet" href="assets/css/cascade/production/icons-ie7.min.css"><![endif]-->
+        <!--[if lt IE 9]><script src="assets/js/lib/polyfills/iehtmlshiv.js"></script><![endif]-->
+        <title>Cascade Framework</title>
+        <meta name="description" content="Professional Frontend framework that makes building websites easier than ever.">
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width">
+        <style type="text/css">
+            .aside {
+                min-width:130px;
+            }
+
+            .content {
+                margin:6px 0;
+            }
+
+            .site-body .site-body {
+                margin:0;
+            }
+
+            .site-body .site-footer {
+                border-top-width: 1px;
+            }
+
+            .layout-demo .cell {
+                background-image: url('assets/img/alpha-10.png');
+                padding:2px 4px;
+                border-radius:6px;
+            }
+        </style>
+    </head>
+    <body class="narrow">
+        <div class="site-center">
+            <div class="site-body">
+                <div class="site-header">
+                    <div class="tags sitemenutags">
+                        <div class="cell">
+                            <ul class="nav blocks">
+                                <li class=""><a href="https://github.com/jslegers/cascadeframework/archive/master.zip" class="">Download v1.0</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col sizefill sitemenu">
+                        <div class="col sizefit mobile-sizefit">
+                            <div class="cell">
+                                <a href="index.html" class="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col sizefill mobile-sizefill">
+                            <div class="cell">
+                                <ul class="nav">
+                                    <li class="active"><a href="grid.html">Grid</a></li>
+                                    <li><a href="typography.html">Typography</a></li>
+                                    <li><a href="icons.html">Icons</a></li>
+                                    <li><a href="components.html">Components</a></li>
+                                    <li><a href="templates.html">Templates</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="cell">
+                        <div class="col">
+                            <div class="cell">
+                                <div class="page-header">
+                                    <h1>Grid <small>documentation</small></h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col size1of4">
+                            <div class="cell menu">
+                                <span class="tiny">Grid types</span>
+                                <ul class="left nav links">
+                                    <li><a href="grid.html">Semantic grid</a></li>
+                                    <li class="active"><a href="grid-presentational.html">Presentational grid</a></li>
+                                    <li><a href="grid-mediaobject.html">Media object</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col sizefill">
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="col">
+                                <div class="cell">
+                                    <h2>Presentational classes</h2>
+                                    <p>
+                                        While presentational classes do tend to result in having more classes in your markup that have no semantic purpose and therewith often leads to
+                                        uglier HTML markup, the trade-off is that it allows you to write much less custom CSS to achieve the same effect.
+                                    </p>
+                                    <p>
+                                        This is because presentational classes increase the reusability of your CSS rules and can act as an abstraction layer for dealing with
+                                        browser quirks. UI elements that share presentational features but have no shared semantics can inherit from
+                                        the same presentational classes, which themselves are optimised for crossbrowser support and modularity.
+                                    </p>
+                                    <p>
+                                        Because this can significantly decrease the time required to build a professional crossbrowser design, Cascade Framework offers a
+                                        range of presentational grid classes as an alternative to its semantic grid mechanism:
+                                    </p>
+                                    <ul>
+                                        <li>The "col" class adds the default styling rules used for the section, article, header, footer, aside and nav elements to any block level
+                                            element, usually a div element. This is especially useful when you want support for old IE without relying on a Javascript based shiv.</li>
+                                        <li>You can add a percentage based width to your section, article, header, footer, aside and nav elements or your block level element with a "col" class
+                                            by adding a class that has the format "sizeXofY". Y can be 2,3,4,5,6,7,8,9,10,12,16 or 24 and X can be any value between 1 and Y-1.</li>
+                                        <li>The "sizefit" class can be used as a wrapper for elements that have a fixed width and automaticly takes the width of that element. It is especially
+                                            useful as a wrapper for images as part of the media object pattern.</li>
+                                        <li>The "sizefill" class can be used to get an element to fill any remaining space in its container element. It is especially useful to compensate for rounding
+                                            errors in old IE when using the "sizeXofY" class or custom percentage based widths, but also as part of the media object pattern.</li>
+                                    </ul>
+                                    <p>
+                                        Herebelow, you see an example of how to use the presentational grid classes.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="cell panel">
+                                    <div class="body">
+                                        <div class="cell layout-demo">
+                                            <div class="col">
+                                                <div class="cell">
+                                                    col
+                                                    <div class="col">
+                                                        <div class="col size1of2">
+                                                            <div class="cell">
+                                                                col size1of2
+                                                                <div class="col">
+                                                                    <div class="col size2of3">
+                                                                        <div class="cell">
+                                                                            col size2of3
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col sizefill">
+                                                                        <div class="cell">
+                                                                            col sizefill
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col sizefill">
+                                                            <div class="cell">
+                                                                col sizefill
+                                                                <div class="col">
+                                                                    <div class="col size1of2">
+                                                                        <div class="cell">
+                                                                            col size1of2
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col sizefill">
+                                                                        <div class="cell">
+                                                                            col sizefill
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="cell">
+                                                    col
+                                                    <div class="col">
+                                                        <div class="col size1of3">
+                                                            <div class="cell">
+                                                                col size1of3
+                                                            </div>
+                                                        </div>
+                                                        <div class="col size1of3">
+                                                            <div class="cell">
+                                                                col size1of3
+                                                            </div>
+                                                        </div>
+                                                        <div class="col sizefill">
+                                                            <div class="cell">
+                                                                col sizefill
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="cell">
+                                                    col
+                                                    <div class="col">
+                                                        <div class="col size2of5">
+                                                            <div class="cell">
+                                                                col size2of5
+                                                            </div>
+                                                        </div>
+                                                        <div class="col size2of5">
+                                                            <div class="cell">
+                                                                col size2of5
+                                                            </div>
+                                                        </div>
+                                                        <div class="col sizefill">
+                                                            <div class="cell">
+                                                                col sizefill
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="cell">
+                                                    col
+                                                    <div class="col">
+                                                        <div class="col size4of5">
+                                                            <div class="cell">
+                                                                col site4of5
+                                                                <div class="col">
+                                                                    <div class="col size1of2">
+                                                                        <div class="cell">
+                                                                            col size1of2
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col sizefill">
+                                                                        <div class="cell">
+                                                                            col sizefill
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col sizefill">
+                                                            <div class="cell">
+                                                                col sizefill
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="cell">
+                                                    col
+                                                    <div class="col">
+                                                        <div class="col size4of5">
+                                                            <div class="cell">
+                                                                col site4of5
+                                                                <div class="col">
+                                                                    <div class="col size4of5">
+                                                                        <div class="cell">
+                                                                            col site4of5
+                                                                            <div class="col">
+                                                                                <div class="col size2of3">
+                                                                                    <div class="cell">
+                                                                                        col size2of3
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col sizefill">
+                                                                                    <div class="cell">
+                                                                                        col sizefill
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col sizefill">
+                                                                        <div class="cell">
+                                                                            col sizefill
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col sizefill">
+                                                            <div class="cell">
+                                                                col sizefill
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="col">
+                                <div class="cell">
+                                    <h2>Responsive presentational classes</h2>
+                                    <p>
+                                        If you use Cascade Framework's responsive mechanism, all widths for section, article, header, footer, aside and nav elements and block level
+                                        elements with a "col" class are reset back to 100%. This behavior can be overwritten by screen width specific classes that
+                                        have the format "A-sizeXofY", "A-sizefit" or "A-sizefill", where A can be "phone", "tablet" or "mobile".
+                                    </p>
+                                    <p>
+                                        In the example below, tablet specific presentational classes have been added to adjust the layout only for the screen range
+                                        commonly used in tablets. If you're using a desktop or laptop computer, you can resize your browser to test the effect.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="cell panel">
+                                    <div class="body">
+                                        <div class="cell layout-demo">
+                                            <div class="col">
+                                                <div class="cell">
+                                                    col
+                                                    <div class="col">
+                                                        <div class="col size1of2">
+                                                            <div class="cell">
+                                                                col size1of2
+                                                                <div class="col">
+                                                                    <div class="col size2of3 tablet-size1of2">
+                                                                        <div class="cell">
+                                                                            col size2of3<br/>
+                                                                            tablet-size1of2
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col sizefill tablet-sizefill">
+                                                                        <div class="cell">
+                                                                            col sizefill<br/>
+                                                                            tablet-sizefill
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col sizefill">
+                                                            <div class="cell">
+                                                                col sizefill
+                                                                <div class="col">
+                                                                    <div class="col size1of2 tablet-size2of3">
+                                                                        <div class="cell">
+                                                                            col size1of2<br/>
+                                                                            tablet-size2of3
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col sizefill tablet-sizefill">
+                                                                        <div class="cell">
+                                                                            col sizefill<br/>
+                                                                            tablet-sizefill
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="cell">
+                                                    col
+                                                    <div class="col">
+                                                        <div class="col size1of3 tablet-size3of4">
+                                                            <div class="cell">
+                                                                col size1of3<br/>
+                                                                tablet-size3of4
+                                                            </div>
+                                                        </div>
+                                                        <div class="col size1of3 tablet-sizefill">
+                                                            <div class="cell">
+                                                                col size1of3<br/>
+                                                                tablet-sizefill
+                                                            </div>
+                                                        </div>
+                                                        <div class="col sizefill">
+                                                            <div class="cell">
+                                                                col sizefill
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="cell">
+                                                    col
+                                                    <div class="col">
+                                                        <div class="col size2of5">
+                                                            <div class="cell">
+                                                                col size2of5
+                                                            </div>
+                                                        </div>
+                                                        <div class="col size2of5">
+                                                            <div class="cell">
+                                                                col size2of5
+                                                            </div>
+                                                        </div>
+                                                        <div class="col sizefill">
+                                                            <div class="cell">
+                                                                col sizefill
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="cell">
+                                                    col
+                                                    <div class="col">
+                                                        <div class="col size4of5 tablet-size1of2">
+                                                            <div class="cell">
+                                                                col site4of5<br/>
+                                                                tablet-size1of2 
+                                                                <div class="col">
+                                                                    <div class="col size1of2">
+                                                                        <div class="cell">
+                                                                            col size1of2
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col sizefill">
+                                                                        <div class="cell">
+                                                                            col sizefill
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col sizefill tablet-sizefill ">
+                                                            <div class="cell">
+                                                                col sizefill<br/>
+                                                                tablet-sizefill 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="cell">
+                                                    col
+                                                    <div class="col">
+                                                        <div class="col size4of5">
+                                                            <div class="cell">
+                                                                col site4of5
+                                                                <div class="col">
+                                                                    <div class="col size4of5 tablet-size2of3">
+                                                                        <div class="cell">
+                                                                            col site4of5<br/>
+                                                                            tablet-size2of3 
+                                                                            <div class="col">
+                                                                                <div class="col size2of3 tablet-size2of5">
+                                                                                    <div class="cell">
+                                                                                        col size2of3<br/>
+                                                                                        tablet-size2of5
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col sizefill tablet-sizefill">
+                                                                                    <div class="cell">
+                                                                                        col sizefill<br/>
+                                                                                        tablet-sizefill
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col sizefill tablet-sizefill">
+                                                                        <div class="cell">
+                                                                            col sizefill<br/>
+                                                                            tablet-sizefill
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col sizefill">
+                                                            <div class="cell">
+                                                                col sizefill
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="col">
+                                <div class="cell">
+                                    <h2>Site layout</h2>
+                                    <p>
+                                        Herebelow, the example layout for the semantic grid has been rewritten using presentational classes only to demonstrate how
+                                        both techniques can be used interchangably. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="cell panel">
+                                    <div class="body">
+                                        <div class="cell">
+                                            <div class="col">
+                                                <div class="cell">
+                                                    <div class="col site-header">
+                                                        <div class="col size4of5 float-right">
+                                                            <div class="cell">
+                                                                <h2>Basic blog layout</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col aside size1of5">
+                                                        <div class="cell menu">
+                                                            <ul class="left links nav">
+                                                                <li class="active"><a href="#">Blog</a></li>
+                                                                <li><a href="#">Resources</a></li>
+                                                                <li><a href="#">About</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="site-body sizefill">
+                                                        <div class="border-bottom">
+                                                            <div class="cell">
+                                                                <h3>Cascade Framework makes webdesign easier than ever!</h3>
+                                                                <div class="col content">
+                                                                    Cascade Framework is a new CSS Framework that offers you everything you need to build
+                                                                    professional cross-browser websites in no time. It's modular architecture further ... <a href="#">[ read more ]</a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <i>Wednesday 13<sup>th</sup> march, 2013</i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="border-bottom">
+                                                            <div class="cell">
+                                                                <h3>Cascade Framework makes webdesign easier than ever!</h3>
+                                                                <div class="col content">
+                                                                    Cascade Framework is a new CSS Framework that offers you everything you need to build
+                                                                    professional cross-browser websites in no time. It's modular architecture further ... <a href="#">[ read more ]</a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <i>Wednesday 13<sup>th</sup> march, 2013</i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="cell">
+                                                                <h3>Cascade Framework makes webdesign easier than ever!</h3>
+                                                                <div class="col content">
+                                                                    Cascade Framework is a new CSS Framework that offers you everything you need to build
+                                                                    professional cross-browser websites in no time. It's modular architecture further ... <a href="#">[ read more ]</a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <i>Wednesday 13<sup>th</sup> march, 2013</i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="site-footer">
+                                                        <div class="col size4of5 float-right">
+                                                            <div class="cell pipes">
+                                                                <ul class="nav">
+                                                                    <li><a href="#">Sitemap</a></li>
+                                                                    <li><a href="#">About</a></li>
+                                                                    <li><a href="#">Contact us</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer">
+                <div class="cell">
+                    <div id="sociallogos">
+                        <a href="https://twitter.com/cascadecss"><span class="icon icon-32 icon-twitter"></span></a>
+                        <a href="http://www.facebook.com/cascadeframework"><span class="icon icon-32 icon-facebook-sign"></span></a>
+                        <a href="https://github.com/CascadeFramework"><span class="icon icon-32 icon-github"></span></a>
+                        <div class="col">
+                            &#169; 2013, <a href="https://twitter.com/johnslegers">John Slegers</a>
+                        </div>
+                    </div>
+                    <a href="index.html" class="powered-by"></a>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
