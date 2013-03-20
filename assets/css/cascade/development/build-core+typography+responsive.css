@@ -528,7 +528,7 @@ section,article,header,footer,aside,nav,.col,.tabs {
 }
 
 section,article,header,footer,aside,nav,.site-footer,.site-header,table,.col,.tabs,.tab-content,.tabs .nav,figure img,.tree li {
-    width:100%;max-width:100%;
+    width:100%;
 }
 
 .tabs .nav,.tab-content {
