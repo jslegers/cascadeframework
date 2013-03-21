@@ -111,11 +111,9 @@ window.App = (function( window, document ) {
     };
     
     for (var x in App.path){
-        if(x != App.path.length - 1)
-            App.root += '/' + App.path[x];
+        if(x != 0 && x != App.path.length - 1)
+            App.root += '/' + App.path[x]; 
     }
-    
-    console.log(App.root);
     
     App.jsroot = App.root + App.jsroot;
     
