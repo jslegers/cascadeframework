@@ -115,6 +115,8 @@ window.App = (function( window, document ) {
             App.root += '/' + App.path[x];
     }
     
+    alert(App.root); 
+    
     App.jsroot = App.root + App.jsroot;
     
     if(App.path[App.path.length-1] == '' || App.path[App.path.length-1] == root){
