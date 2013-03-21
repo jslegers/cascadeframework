@@ -117,8 +117,6 @@ window.App = (function( window, document ) {
         }
     }
     
-    alert(App.rootpath); 
-    
     App.jsroot = App.rootpath + App.jsroot;
     
     if(App.path[App.path.length-1] == '' || App.path[App.path.length-1] == root){
