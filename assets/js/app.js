@@ -118,7 +118,7 @@ window.App = (function( window, document ) {
         }
     }
     
-    alert(App.rootpath); 
+    alert(App.path); 
     
     App.jsroot = App.rootpath + App.jsroot;
     
