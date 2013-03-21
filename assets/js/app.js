@@ -101,7 +101,7 @@ window.App = (function( window, document ) {
         path : window.location.pathname.split(/[\\/]/) ,
         testfilename : true,
         logging : false,
-        root : '',
+        rootpath : '',
         jsroot : '/assets/js/',
         log : (function(value) {
             if(App.logging){
@@ -112,12 +112,12 @@ window.App = (function( window, document ) {
     
     for (var x in App.path){
         if(x != 0 && x != App.path.length - 1)
-            App.root += '/' + App.path[x];
+            App.rootpath += '/' + App.path[x];
     }
     
-    alert(App.root); 
+    alert(App.rootpath); 
     
-    App.jsroot = App.root + App.jsroot;
+    App.jsroot = App.rootpath + App.jsroot;
     
     if(App.path[App.path.length-1] == '' || App.path[App.path.length-1] == root){
         App.filename = App.jsroot + 'page/index.js';
