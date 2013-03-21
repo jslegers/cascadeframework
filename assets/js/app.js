@@ -115,8 +115,6 @@ window.App = (function( window, document ) {
             App.rootpath += '/' + App.path[x];
     }
     
-    console.log(App.rootpath); 
-    
     App.jsroot = App.rootpath + App.jsroot;
     
     if(App.path[App.path.length-1] == '' || App.path[App.path.length-1] == root){
@@ -188,4 +186,6 @@ window.App = (function( window, document ) {
         }
         ]);
     });
+    
+    console.log(App.rootpath); 
 }());
