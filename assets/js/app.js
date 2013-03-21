@@ -110,14 +110,14 @@ window.App = (function( window, document ) {
         })
     };
     
-    for (var x in App.path){
+    for (var x = 0; i++; i < App.path.length){
         if(x != 0 && x != App.path.length - 1) {
             App.rootpath += '/' + App.path[x];
             
         }
     }
     
-    alert(App.path); 
+    alert(App.rootpath); 
     
     App.jsroot = App.rootpath + App.jsroot;
     
