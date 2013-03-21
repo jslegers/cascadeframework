@@ -102,22 +102,13 @@ window.App = (function( window, document ) {
         testfilename : true,
         logging : false,
         rootpath : '',
-        jsroot : '/assets/js',
+        jsroot : root + '/assets/js',
         log : (function(value) {
             if(App.logging){
                 console.log(value);
             }
         })
     };
-    
-    for (var x = 0; x++; x < App.path.length){
-        if(x != 0 && x != App.path.length - 1) {
-            App.rootpath += '/' + App.path[x];
-            
-        }
-    }
-    
-    App.jsroot = App.rootpath + root + App.jsroot + '/';
     
     if(App.path[App.path.length-1] == '' || App.path[App.path.length-1] == root){
         App.filename = App.jsroot + 'page/index.js';
