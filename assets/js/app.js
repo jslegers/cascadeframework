@@ -110,7 +110,7 @@ window.App = (function( window, document ) {
         })
     };
     
-    for (x in App.path){
+    for (var x in App.path){
         if(x != App.path.length - 1)
             App.root += '/' + App.path[x];
     }
