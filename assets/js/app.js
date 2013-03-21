@@ -112,7 +112,6 @@ window.App = (function( window, document ) {
     
     for (var x in App.path){
         if(x != 0 && x != App.path.length - 1) {
-            alert(App.rootpath); 
             App.rootpath += '/' + App.path[x];
             
         }
