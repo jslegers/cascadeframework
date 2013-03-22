@@ -102,7 +102,7 @@ window.App = (function( window, document ) {
         testfilename : true,
         logging : false,
         rootpath : '',
-        jsroot : root + '/assets/js/',
+        jsroot : 'assets/js/',
         log : (function(value) {
             if(App.logging){
                 console.log(value);
