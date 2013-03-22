@@ -96,11 +96,13 @@
  */
 
 window.App = (function( window, document ) {
-    var root = 'cascadeframework';
+    var root = 'cascadeframework'; 
     var App = {
         path : window.location.pathname.split(/[\\/]/) ,
         testfilename : true,
         logging : false,
+        rootpath : '',
+        jsroot : 'assets/js/',
         log : (function(value) {
             if(App.logging){
                 console.log(value);
@@ -109,11 +111,10 @@ window.App = (function( window, document ) {
     };
     
     if(App.path[App.path.length-1] == '' || App.path[App.path.length-1] == root){
-        App.filename = 'assets/js/page/index.js';
+        App.filename = App.jsroot + 'page/index.js';
     } else {
-        App.filename = 'assets/js/page/'+App.path[App.path.length-1].split( '.' )[0]+'.js';
+        App.filename = App.jsroot + 'page/'+App.path[App.path.length-1].split( '.' )[0]+'.js';
     }
-    
 
     App.checkFile = function(fileUrl) {
         if(App.testfilename){
@@ -137,7 +138,7 @@ window.App = (function( window, document ) {
     
     App.initialize = function(callback){
         var l = document.createElement('script');
-        l.src = 'assets/js/lib/app/loader.js';
+        l.src = App.jsroot + 'lib/app/loader.js';
         l.type = 'text/javascript';
         l.async = 'true';
         l.onload = l.onreadystatechange = function() {
@@ -154,15 +155,18 @@ window.App = (function( window, document ) {
 
 (function() {
     App.initialize(function(){
+        var console = App.jsroot + 'lib/polyfills/console.js',
+        detector = App.jsroot + 'lib/app/detector.js',
+        site = App.jsroot + 'site.js';
         Loader([{
             test: window.console,
-            success: ['assets/js/lib/app/detector.js', "assets/js/site.js"],
-            failure: ["assets/js/lib/polyfills/console.js", 'assets/js/lib/app/detector.js', "assets/js/site.js"],
+            success: [detector, site],
+            failure: [console, detector, site],
             callback: {
-                'assets/js/lib/polyfills/console.js': function () {
+                console: function () {
                     App.log("Console shiv loaded!");
                 },
-                'assets/js/lib/app/detector.js': function () {
+                detector: function () {
                     App.log("Detector loaded!");
                 }
             }
