@@ -96,13 +96,13 @@
  */
 
 window.App = (function( window, document ) {
-    var root = '/cascadeframework';
+    var root = 'cascadeframework'; 
     var App = {
         path : window.location.pathname.split(/[\\/]/) ,
         testfilename : true,
         logging : false,
         rootpath : '',
-        jsroot : root + '/assets/js/',
+        jsroot : 'assets/js/', 
         log : (function(value) {
             if(App.logging){
                 console.log(value);
@@ -115,7 +115,6 @@ window.App = (function( window, document ) {
     } else {
         App.filename = App.jsroot + 'page/'+App.path[App.path.length-1].split( '.' )[0]+'.js';
     }
-    
 
     App.checkFile = function(fileUrl) {
         if(App.testfilename){
