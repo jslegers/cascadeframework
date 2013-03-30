@@ -206,3 +206,38 @@
         float: left;
     }
 }
+
+.sitemenu-responsive {
+    display:none !important;
+}
+
+.sitemenu-responsive .left {
+    position: absolute;
+    background: #2d3538;
+    overflow: hidden;
+    width:100%;
+    z-index:1000;
+}
+
+.sitemenu-responsive .icon-align-justify {
+    margin:0 !important;
+}
+
+@media (max-width:580px) {
+    .col.sitemenu {
+        display:none !important;
+    }
+
+    .sitemenu-responsive {
+        display:block !important;
+    }
+
+    .sitemenu-responsive .collapse-trigger a {
+        padding: 4px 6px 0;
+    }
+
+    .sitemenutags {
+        position: absolute;
+        right: 0;
+    }
+}
