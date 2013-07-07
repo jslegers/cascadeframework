@@ -121,7 +121,8 @@
         display: none !important;
     }
 
-    section,article,header,footer,aside,nav,.col,
+    main,section,article,header,footer,aside,nav,.col,
+    main.width-fit,main.width-fill,
     section.width-fit,section.width-fill,
     article.width-fit,article.width-fill,
     header.width-fit,header.width-fill,
@@ -158,6 +159,7 @@
    ========================================================================== */
 
 @media (max-width: 767px) {
+	main.mobile-width-fill,
     section.mobile-width-fill,
     article.mobile-width-fill,
     header.mobile-width-fill,
@@ -165,6 +167,7 @@
     aside.mobile-width-fill,
     nav.mobile-width-fill,
     .col.mobile-width-fill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
+	main.mobile-width-fit,
     section.mobile-width-fit,
     article.mobile-width-fit,
     header.mobile-width-fit,
@@ -181,6 +184,7 @@
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+	main.mobile-width-fill,
     section.tablet-width-fill,
     article.tablet-width-fill,
     header.tablet-width-fill,
@@ -188,6 +192,7 @@
     aside.tablet-width-fill,
     nav.tablet-width-fill,
     .col.tablet-width-fill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
+	main.mobile-width-fill,
     section.tablet-width-fit,
     article.tablet-width-fit,
     header.tablet-width-fit,
@@ -204,6 +209,7 @@
 }
 
 @media (max-width: 480px) {
+	main.phone-width-fill,
     section.phone-width-fill,
     article.phone-width-fill,
     header.phone-width-fill,
@@ -211,6 +217,7 @@
     aside.phone-width-fill,
     nav.phone-width-fill,
     .col.phone-width-fill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
+    main.phone-width-fit,
     section.phone-width-fit,
     article.phone-width-fit,
     header.phone-width-fit,

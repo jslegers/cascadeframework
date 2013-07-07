@@ -97,7 +97,7 @@
 
 
 
-div,article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,pre,div,.nav,.nav a,.width-fill,.width-fit img,blockquote small,address,button,.button,.nav ul,.nav li,.logo {
+div,main,article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,pre,div,.nav,.nav a,.width-fill,.width-fit img,blockquote small,address,button,.button,.nav ul,.nav li,.logo {
     display:block;*zoom:1;
 }
 
@@ -113,14 +113,14 @@ audio,canvas,video,img,input,label,textarea,.menu .stat span,.icon,.label,.pipes
     display:inline-block;*display:inline;*zoom:1;
 }
 
-figcaption,div:after,article:after,aside:after,details:after,figcaption:after,figure:after,footer:after,header:after,
+figcaption,div:after,main:after,article:after,aside:after,details:after,figcaption:after,figure:after,footer:after,header:after,
 hgroup:after,nav:after,section:after,pre:after,.nav:after,.nav a:after,.width-fill:after,.width-fit img:after,
 blockquote small:after,address:after,.nav ul:after,.nav li:after {
     clear:both;
 }
 
 
-div:before,div:after,article:before,article:after,aside:before,aside:after,details:before,details:after,
+div:before,div:after,main:before,main:after,article:before,article:after,aside:before,aside:after,details:before,details:after,
 figcaption:before,figcaption:after,figure:before,figure:after,footer:before,footer:after,
 header:before,header:after,hgroup:before,hgroup:after,nav:before,nav:after,section:before,section:after,
 pre:before,pre:after,.nav:before,.nav:after,.nav a:before,.nav a:after,.width-fill:before,.width-fill:after,
@@ -516,7 +516,7 @@ section,article,header,footer,aside,nav,.col,.tabs {
     min-width:50px;
 }
 
-section,article,header,footer,aside,nav,.site-footer,.site-header,table,.col,.tabs,.tab-content,.tabs .nav,figure img,.tree li {
+main,section,article,header,footer,aside,nav,.site-footer,.site-header,table,.col,.tabs,.tab-content,.tabs .nav,figure img,.tree li {
     width:100%;
 }
 
@@ -574,7 +574,7 @@ table {
     border-style:none;
 }
 
-section,article,header,footer,aside,nav,div,table,col,th,td,img,figure,fieldset,pre,code,abbr,span,ol,ul,li,a,button,input,hr,select,textarea,blockquote,td input,.icon-border,.checkbox,.radio,.datasheet table.body {
+main,section,article,header,footer,aside,nav,div,table,col,th,td,img,figure,fieldset,pre,code,abbr,span,ol,ul,li,a,button,input,hr,select,textarea,blockquote,td input,.icon-border,.checkbox,.radio,.datasheet table.body {
     border:0 solid #ccc;
 }
 
@@ -1612,7 +1612,8 @@ input,textarea {
         display: none !important;
     }
 
-    section,article,header,footer,aside,nav,.col,
+    main,section,article,header,footer,aside,nav,.col,
+    main.width-fit,main.width-fill,
     section.width-fit,section.width-fill,
     article.width-fit,article.width-fill,
     header.width-fit,header.width-fill,
@@ -1643,7 +1644,13 @@ input,textarea {
     }
 }
 
+
+/* =============================================================================
+   width-fit and width-fill support for mobile
+   ========================================================================== */
+
 @media (max-width: 767px) {
+	main.mobile-width-fill,
     section.mobile-width-fill,
     article.mobile-width-fill,
     header.mobile-width-fill,
@@ -1651,6 +1658,7 @@ input,textarea {
     aside.mobile-width-fill,
     nav.mobile-width-fill,
     .col.mobile-width-fill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
+	main.mobile-width-fit,
     section.mobile-width-fit,
     article.mobile-width-fit,
     header.mobile-width-fit,
@@ -1667,6 +1675,7 @@ input,textarea {
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+	main.mobile-width-fill,
     section.tablet-width-fill,
     article.tablet-width-fill,
     header.tablet-width-fill,
@@ -1674,6 +1683,7 @@ input,textarea {
     aside.tablet-width-fill,
     nav.tablet-width-fill,
     .col.tablet-width-fill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
+	main.mobile-width-fill,
     section.tablet-width-fit,
     article.tablet-width-fit,
     header.tablet-width-fit,
@@ -1690,6 +1700,7 @@ input,textarea {
 }
 
 @media (max-width: 480px) {
+	main.phone-width-fill,
     section.phone-width-fill,
     article.phone-width-fill,
     header.phone-width-fill,
@@ -1697,6 +1708,7 @@ input,textarea {
     aside.phone-width-fill,
     nav.phone-width-fill,
     .col.phone-width-fill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
+    main.phone-width-fit,
     section.phone-width-fit,
     article.phone-width-fit,
     header.phone-width-fit,
