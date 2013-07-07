@@ -122,13 +122,13 @@
     }
 
     section,article,header,footer,aside,nav,.col,
-    section.sizefit,section.sizefill,
-    article.sizefit,article.sizefill,
-    header.sizefit,header.sizefill,
-    footer.sizefit,footer.sizefill,
-    aside.sizefit,aside.sizefill,
-    nav.sizefit,nav.sizefill,
-    .col.sizefit,.col.sizefill {
+    section.width-fit,section.width-fill,
+    article.width-fit,article.width-fill,
+    header.width-fit,header.width-fill,
+    footer.width-fit,footer.width-fill,
+    aside.width-fit,aside.width-fill,
+    nav.width-fit,nav.width-fill,
+    .col.width-fit,.col.width-fill {
         padding:0 !important;
         display:block !important;
         float:left !important;
@@ -154,24 +154,24 @@
 
 
 /* =============================================================================
-   Sizefit and sizefill support for mobile
+   width-fit and width-fill support for mobile
    ========================================================================== */
 
 @media (max-width: 767px) {
-    section.mobile-sizefill,
-    article.mobile-sizefill,
-    header.mobile-sizefill,
-    footer.mobile-sizefill,
-    aside.mobile-sizefill,
-    nav.mobile-sizefill,
-    .col.mobile-sizefill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
-    section.mobile-sizefit,
-    article.mobile-sizefit,
-    header.mobile-sizefit,
-    footer.mobile-sizefit,
-    aside.mobile-sizefit,
-    nav.mobile-sizefit,
-    .col.mobile-sizefit {width:auto!important;}
+    section.mobile-width-fill,
+    article.mobile-width-fill,
+    header.mobile-width-fill,
+    footer.mobile-width-fill,
+    aside.mobile-width-fill,
+    nav.mobile-width-fill,
+    .col.mobile-width-fill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
+    section.mobile-width-fit,
+    article.mobile-width-fit,
+    header.mobile-width-fit,
+    footer.mobile-width-fit,
+    aside.mobile-width-fit,
+    nav.mobile-width-fit,
+    .col.mobile-width-fit {width:auto!important;}
 
     .mobile-center {
         float:none !important;
@@ -181,20 +181,20 @@
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-    section.tablet-sizefill,
-    article.tablet-sizefill,
-    header.tablet-sizefill,
-    footer.tablet-sizefill,
-    aside.tablet-sizefill,
-    nav.tablet-sizefill,
-    .col.tablet-sizefill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
-    section.tablet-sizefit,
-    article.tablet-sizefit,
-    header.tablet-sizefit,
-    footer.tablet-sizefit,
-    aside.tablet-sizefit,
-    nav.tablet-sizefit,
-    .col.tablet-sizefit {width:auto!important;}
+    section.tablet-width-fill,
+    article.tablet-width-fill,
+    header.tablet-width-fill,
+    footer.tablet-width-fill,
+    aside.tablet-width-fill,
+    nav.tablet-width-fill,
+    .col.tablet-width-fill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
+    section.tablet-width-fit,
+    article.tablet-width-fit,
+    header.tablet-width-fit,
+    footer.tablet-width-fit,
+    aside.tablet-width-fit,
+    nav.tablet-width-fit,
+    .col.tablet-width-fit {width:auto!important;}
 
     .tablet-center {
         float:none !important;
@@ -204,20 +204,20 @@
 }
 
 @media (max-width: 480px) {
-    section.phone-sizefill,
-    article.phone-sizefill,
-    header.phone-sizefill,
-    footer.phone-sizefill,
-    aside.phone-sizefill,
-    nav.phone-sizefill,
-    .col.phone-sizefill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
-    section.phone-sizefit,
-    article.phone-sizefit,
-    header.phone-sizefit,
-    footer.phone-sizefit,
-    aside.phone-sizefit,
-    nav.phone-sizefit,
-    .col.phone-sizefit {width:auto!important;}
+    section.phone-width-fill,
+    article.phone-width-fill,
+    header.phone-width-fill,
+    footer.phone-width-fill,
+    aside.phone-width-fill,
+    nav.phone-width-fill,
+    .col.phone-width-fill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
+    section.phone-width-fit,
+    article.phone-width-fit,
+    header.phone-width-fit,
+    footer.phone-width-fit,
+    aside.phone-width-fit,
+    nav.phone-width-fit,
+    .col.phone-width-fit {width:auto!important;}
 
     .phone-center {
         float:none !important;

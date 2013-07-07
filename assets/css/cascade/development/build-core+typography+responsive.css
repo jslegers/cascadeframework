@@ -100,7 +100,7 @@
    Default display,float and positioning
    ========================================================================== */
 
-div,article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,pre,div,.nav,.nav a,.sizefill,.sizefit img,blockquote small,address,button,.button,.nav ul,.nav li,.logo {
+div,article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,pre,div,.nav,.nav a,.width-fill,.width-fit img,blockquote small,address,button,.button,.nav ul,.nav li,.logo {
     display:block;*zoom:1;
 }
 
@@ -117,7 +117,7 @@ audio,canvas,video,img,input,label,textarea,.menu .stat span,.icon,.label,.pipes
 }
 
 figcaption,div:after,article:after,aside:after,details:after,figcaption:after,figure:after,footer:after,header:after,
-hgroup:after,nav:after,section:after,pre:after,.nav:after,.nav a:after,.sizefill:after,.sizefit img:after,
+hgroup:after,nav:after,section:after,pre:after,.nav:after,.nav a:after,.width-fill:after,.width-fit img:after,
 blockquote small:after,address:after,.nav ul:after,.nav li:after {
     clear:both;
 }
@@ -126,8 +126,8 @@ blockquote small:after,address:after,.nav ul:after,.nav li:after {
 div:before,div:after,article:before,article:after,aside:before,aside:after,details:before,details:after,
 figcaption:before,figcaption:after,figure:before,figure:after,footer:before,footer:after,
 header:before,header:after,hgroup:before,hgroup:after,nav:before,nav:after,section:before,section:after,
-pre:before,pre:after,.nav:before,.nav:after,.nav a:before,.nav a:after,.sizefill:before,.sizefill:after,
-.sizefit img:before,.sizefit img:after,blockquote small:before,blockquote small:after,address:before,address:after,
+pre:before,pre:after,.nav:before,.nav:after,.nav a:before,.nav a:after,.width-fill:before,.width-fill:after,
+.width-fit img:before,.width-fit img:after,blockquote small:before,blockquote small:after,address:before,address:after,
 .nav ul:before,.nav ul:after,.nav li:before,.nav li:after {
     content:""; display:table;
 }
@@ -148,11 +148,11 @@ audio:not([controls]) {
     float:none;
 }
 
-section,article,header,footer,aside,nav,img,.nav,.col,.tabs,.tab-content,.sizefit,.nav li,button,.button,.button-group,.nav a,.left li li,.tabs .left,.right li li {
+section,article,header,footer,aside,nav,img,.nav,.col,.tabs,.tab-content,.width-fit,.nav li,button,.button,.button-group,.nav a,.left li li,.tabs .left,.right li li {
     float:left;
 }
 
-.sizefill {
+.width-fill {
     display:table-cell;
     float:none;
     _float:left;
@@ -523,7 +523,7 @@ section,article,header,footer,aside,nav,.col,.tabs {
     width:80% !important;
 }
 
-.sizefill {
+.width-fill {
     min-width:50px;
 }
 
@@ -535,7 +535,7 @@ section,article,header,footer,aside,nav,.site-footer,.site-header,table,.col,.ta
     _width:auto;
 }
 
-.sizefit {
+.width-fit {
     width:auto;
     _width:1px;
 }
@@ -545,7 +545,7 @@ section,article,header,footer,aside,nav,.site-footer,.site-header,table,.col,.ta
     min-width:200px;
 }
 
-.sizefill {
+.width-fill {
     width:10000px;*width:auto;
 }
 
@@ -1072,13 +1072,13 @@ sub,sup,.label {
     }
 
     section,article,header,footer,aside,nav,.col,
-    section.sizefit,section.sizefill,
-    article.sizefit,article.sizefill,
-    header.sizefit,header.sizefill,
-    footer.sizefit,footer.sizefill,
-    aside.sizefit,aside.sizefill,
-    nav.sizefit,nav.sizefill,
-    .col.sizefit,.col.sizefill {
+    section.width-fit,section.width-fill,
+    article.width-fit,article.width-fill,
+    header.width-fit,header.width-fill,
+    footer.width-fit,footer.width-fill,
+    aside.width-fit,aside.width-fill,
+    nav.width-fit,nav.width-fill,
+    .col.width-fit,.col.width-fill {
         padding:0 !important;
         display:block !important;
         float:left !important;
@@ -1104,24 +1104,24 @@ sub,sup,.label {
 
 
 /* =============================================================================
-   Sizefit and sizefill support for mobile
+   width-fit and width-fill support for mobile
    ========================================================================== */
 
 @media (max-width: 767px) {
-    section.mobile-sizefill,
-    article.mobile-sizefill,
-    header.mobile-sizefill,
-    footer.mobile-sizefill,
-    aside.mobile-sizefill,
-    nav.mobile-sizefill,
-    .col.mobile-sizefill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
-    section.mobile-sizefit,
-    article.mobile-sizefit,
-    header.mobile-sizefit,
-    footer.mobile-sizefit,
-    aside.mobile-sizefit,
-    nav.mobile-sizefit,
-    .col.mobile-sizefit {width:auto!important;}
+    section.mobile-width-fill,
+    article.mobile-width-fill,
+    header.mobile-width-fill,
+    footer.mobile-width-fill,
+    aside.mobile-width-fill,
+    nav.mobile-width-fill,
+    .col.mobile-width-fill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
+    section.mobile-width-fit,
+    article.mobile-width-fit,
+    header.mobile-width-fit,
+    footer.mobile-width-fit,
+    aside.mobile-width-fit,
+    nav.mobile-width-fit,
+    .col.mobile-width-fit {width:auto!important;}
 
     .mobile-center {
         float:none !important;
@@ -1131,20 +1131,20 @@ sub,sup,.label {
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-    section.tablet-sizefill,
-    article.tablet-sizefill,
-    header.tablet-sizefill,
-    footer.tablet-sizefill,
-    aside.tablet-sizefill,
-    nav.tablet-sizefill,
-    .col.tablet-sizefill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
-    section.tablet-sizefit,
-    article.tablet-sizefit,
-    header.tablet-sizefit,
-    footer.tablet-sizefit,
-    aside.tablet-sizefit,
-    nav.tablet-sizefit,
-    .col.tablet-sizefit {width:auto!important;}
+    section.tablet-width-fill,
+    article.tablet-width-fill,
+    header.tablet-width-fill,
+    footer.tablet-width-fill,
+    aside.tablet-width-fill,
+    nav.tablet-width-fill,
+    .col.tablet-width-fill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
+    section.tablet-width-fit,
+    article.tablet-width-fit,
+    header.tablet-width-fit,
+    footer.tablet-width-fit,
+    aside.tablet-width-fit,
+    nav.tablet-width-fit,
+    .col.tablet-width-fit {width:auto!important;}
 
     .tablet-center {
         float:none !important;
@@ -1154,20 +1154,20 @@ sub,sup,.label {
 }
 
 @media (max-width: 480px) {
-    section.phone-sizefill,
-    article.phone-sizefill,
-    header.phone-sizefill,
-    footer.phone-sizefill,
-    aside.phone-sizefill,
-    nav.phone-sizefill,
-    .col.phone-sizefill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
-    section.phone-sizefit,
-    article.phone-sizefit,
-    header.phone-sizefit,
-    footer.phone-sizefit,
-    aside.phone-sizefit,
-    nav.phone-sizefit,
-    .col.phone-sizefit {width:auto!important;}
+    section.phone-width-fill,
+    article.phone-width-fill,
+    header.phone-width-fill,
+    footer.phone-width-fill,
+    aside.phone-width-fill,
+    nav.phone-width-fill,
+    .col.phone-width-fill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
+    section.phone-width-fit,
+    article.phone-width-fit,
+    header.phone-width-fit,
+    footer.phone-width-fit,
+    aside.phone-width-fit,
+    nav.phone-width-fit,
+    .col.phone-width-fit {width:auto!important;}
 
     .phone-center {
         float:none !important;
