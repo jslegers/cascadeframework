@@ -216,11 +216,14 @@
     background: #2d3538;
     overflow: hidden;
     width:100%;
-    z-index:1000;
 }
 
 .sitemenu-responsive .icon-align-justify {
     margin:0 !important;
+}
+
+.site-header,.sitemenu-responsive,.sitemenu-responsive .left {
+	z-index:900;	
 }
 
 @media (max-width:580px) {
