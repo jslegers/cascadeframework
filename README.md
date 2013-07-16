@@ -4,9 +4,9 @@ Although the overall look and feel are most definitely inspired by Twitter Boots
 
 Also different from Twitter Bootstrap or other CSS Frameworks out there, Cascade Framework can be used for modern browsers and older browsers alike. All features of Cascade Framework support Internet Explorer from IE6 upwards or degrade gracefully. With Cascade Framework you no longer have to choose between supporting only modern browsers or downgrading your design.
 
-![Cascade Framework](http://jslegers.github.com/cascadeframework/screenshot.png)
+![Cascade Framework](http://jslegers.github.io/cascadeframework/screenshot.png)
 
-For a live demo, go to [http://jslegers.github.com/cascadeframework/](http://jslegers.github.com/cascadeframework/).
+For a live demo, go to [http://jslegers.github.io/cascadeframework/](http://jslegers.github.io/cascadeframework/).
 
 Cascade Framework is MIT licensed.
 
