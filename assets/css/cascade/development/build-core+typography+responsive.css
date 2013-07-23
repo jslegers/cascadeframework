@@ -100,7 +100,7 @@
    Default display,float and positioning
    ========================================================================== */
 
-div,main,article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,pre,div,.nav,.nav a,.width-fill,.width-fit img,blockquote small,address,button,.button,.nav ul,.nav li,.logo {
+div,main,article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,pre,.nav,.nav a,.width-fill,.width-fit img,blockquote small,address,button,.button,.nav ul,.nav li,.logo {
     display:block;*zoom:1;
 }
 
@@ -440,7 +440,7 @@ select {
     padding:8px 16px;
 } 
 
-ul,ol,legend,blockquote,td input,pre code,.menu .header,.pipes a {
+ul,ol,legend,blockquote,td input,pre code,.menu .header,.pipes a,.gallery a {
     padding:0;
 }
 
