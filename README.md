@@ -1,4 +1,4 @@
-# Cascade Framework 1.0
+# Cascade Framework 1.1
 
 Although the overall look and feel are most definitely inspired by Twitter Bootstrap, Cascade framework is not just another Bootstrap clone. Where Twitter Bootstrap puts its focus on delivering shiny user elements that can be dropped into any project and takes control of your project's overall look-and-feel, Cascade Framework is intended to do the opposite. By splitting your CSS into seperate files based on features rather than selectors as well as by implementing a modifier design pattern inspired by SMACCS and OOCSS, Cascade Framework puts you in control!
 
@@ -10,7 +10,7 @@ For a live demo, go to [http://jslegers.github.io/cascadeframework/](http://jsle
 
 Cascade Framework is MIT licensed.
 
- Copyright (c) 2011 John Slegers
+ Copyright (c) 2011-2013 John Slegers
 
  Permission is hereby granted, free of charge, to any person
  obtaining a copy of this software and associated documentation
