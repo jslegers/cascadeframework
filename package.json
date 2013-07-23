@@ -1,0 +1,33 @@
+{
+  "name": "cascadeframework",
+  "description": "CSS framework that puts back the C in CSS",
+  "version": "1.1.0",
+  "author": {
+    "name": "John Slegers",
+    "url": "http://www.johnslegers.com"
+  },
+  "contributors": [
+    {
+      "name": "Matt Browne",
+      "url": "https://github.com/mbrowne/"
+    }
+  ],
+  "homepage": "http://jslegers.github.io/cascadeframework/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/CascadeFramework/cascadeframework"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/CascadeFramework/cascadeframework/blob/master/MIT.license.txt"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-cssmin": "~0.6.1"
+  }
+}

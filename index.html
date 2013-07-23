@@ -60,6 +60,15 @@
                 width:13%;
             }
 
+            .gallery img {
+                border-width:2px;
+                border-color:#999;
+            }
+
+            .gallery img:hover {
+                border-color:#3981a7;
+            }
+
             @media (max-width:979px) {
                 .files .name {
                     width:50%;
@@ -78,7 +87,7 @@
                     margin:0 auto;
                 }
 
-                .masthead .sizefit {
+                .masthead .width-fit {
                     width:100%;
                 }
 
@@ -149,12 +158,12 @@
                     <div class="tags sitemenutags">
                         <div class="cell">
                             <ul class="nav blocks">
-                                <li class=""><a href="https://github.com/jslegers/cascadeframework/archive/master.zip" class="">Download v1.0</a></li>
+                                <li class=""><a href="https://github.com/jslegers/cascadeframework/archive/master.zip" class="">Download v1.1</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col sizefill sitemenu">
-                        <div class="col sizefill mobile-sizefill">
+                    <div class="col width-fill sitemenu">
+                        <div class="col width-fill mobile-width-fill">
                             <div class="cell">
                                 <ul class="nav ">
                                     <li><a href="grid.html">Grid</a></li>
@@ -173,12 +182,12 @@
                     <div class="tags sitemenutags">
                         <div class="cell">
                             <ul class="nav blocks">
-                                <li class=""><a href="https://github.com/jslegers/cascadeframework/archive/master.zip" class="">Download v1.0</a></li>
+                                <li class=""><a href="https://github.com/jslegers/cascadeframework/archive/master.zip" class="">Download v1.1</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col sizefill sitemenu">
-                        <div class="col sizefill mobile-sizefill">
+                    <div class="col width-fill sitemenu">
+                        <div class="col width-fill mobile-width-fill">
                             <div class="cell">
                                 <ul class="nav ">
                                     <li><a href="grid.html">Grid</a></li>
@@ -218,12 +227,12 @@
         <div class="masthead">
             <div class="site-center">
                 <div class="cell">
-                    <div class="col sizefit">
+                    <div class="col width-fit">
                         <div class="cell">
                             <div class="logo-masthead"></div>
                         </div>
                     </div>
-                    <div class="col sizefill">
+                    <div class="col width-fill">
                         <div class="cell">
                             <div class="center slogan">
                                 <div class="cell">
@@ -238,7 +247,7 @@
         </div>
         <div class="site-body">
             <div class="site-center highlights">
-                <div class="col size1of4">
+                <div class="col width-1of4">
                     <div class="cell">
                         <h2><span class="center icon icon-gift icon-64"></span>Feature Rich</h2>
                         <p>
@@ -246,7 +255,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col size1of4">
+                <div class="col width-1of4">
                     <div class="cell">
                         <h2><span class="center icon icon-globe icon-64"></span>Universal</h2>
                         <p>
@@ -254,7 +263,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col size1of4">
+                <div class="col width-1of4">
                     <div class="cell">
                         <h2><span class="center icon icon-check icon-64"></span>Flexible</h2>
                         <p>
@@ -262,7 +271,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col sizefill">
+                <div class="col width-fill">
                     <div class="cell">
                         <h2><span class="center icon icon-cogs icon-64"></span>Modular</h2>
                         <p>
@@ -280,7 +289,7 @@
                         <h2>Different from other CSS frameworks</h2>
                         <p>Although the overall look and feel are most definitely inspired by Twitter Bootstrap, Cascade framework is not just another Bootstrap clone.
                             Where Twitter Bootstrap puts its focus on delivering shiny user elements that can be dropped into any project and takes control of your project's
-                            overall look-and-feel, Cascade Framework is intended to do the opposite. By splitting your CSS into seperate files based on features
+                            overall look-and-feel, Cascade Framework is intended to do the opposite. By splitting your CSS into separate files based on features
                             rather than selectors as well as by implementing a modifier design pattern inspired by
                             <abbr title="Scalable and Modular Architecture for CSS">SMACCS</abbr> and <abbr title="Object Oriented CSS">OOCSS</abbr>, Cascade Framework puts <span class="fatty">you</span> in control!
                         </p>
@@ -439,10 +448,55 @@
                 </div>
                 <div class="col">
                     <div class="cell">
-                        <h2>More info?</h2>
-                        <p>Check out <a href="grid.html">the documentation</a> for an overview and demos of the Cascade Framework's features.</p>
+                        <h2>Still not lightweight enough?</h2>
+                        <p>Is Cascade Framework still not lightweight enough to fit your personal needs?
+                            There's now also an even more lightweight version of Cascade Framework.
+                            Check it out <a href="http://jslegers.github.io/cascadeframeworklight/">on Github</a>!</p>
                     </div>
                 </div>
+                <div class="col">
+                    <div class="cell">
+                        <h2>Showcase</h2>
+                        <p>Want to see real world examples of how to use the framework? Check out the showcase below.</p>
+                    </div>
+                </div>
+                <div class="col">
+                <div class="cell panel">
+                    <div class="body">
+                        <div class="cell">
+                            <div class="col">
+                                <div class="gallery cell">
+                                    <ul class="nav">
+                                        <li><a href="http://www.johnslegers.com/"><img src="assets/img/showcase/johnslegers.png"></a></li>
+                                        <li><a href="http://coshg.org/"><img src="assets/img/showcase/coshg.png"></a></li>
+                                        <li><a href="http://www.johnslegers.com/test/atheneeke/index.html"><img src="assets/img/showcase/atheneeke.png"></a></li>
+                                        <li><a href="http://summersatlrei.org/docs/"><img src="assets/img/showcase/summersatlrei.png"></a></li>
+                                        <li><a href="http://www.johnslegers.com/contact"><img src="assets/img/showcase/clickme.png"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col">
+                        <div class="cell">
+                            <h2>What's next?</h2>
+                            <p>Planned features for Cascade Framework :</p>
+                            <ul>
+                                <li>A rewrite of the codebase to Sass or another a pre-processor language</li>
+                                <li>Custom themes</li>
+                                <li>New interactive UI elements</li>
+                            </ul>
+                            <p>Want to help? Fork <a href="https://github.com/jslegers/cascadeframework">the project at Github</a>.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="cell">
+                            <h2>Want to know more?</h2>
+                            <p>Check out <a href="grid.html">the documentation</a> for an overview and demos of the Cascade Framework's features.</p>
+                        </div>
+                    </div>
+            </div>
             </div>
         </div>
         <div class="site-footer">
