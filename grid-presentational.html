@@ -41,7 +41,7 @@
                     <div class="tags sitemenutags">
                         <div class="cell">
                             <ul class="nav blocks">
-                                <li class=""><a href="https://github.com/jslegers/cascadeframework/archive/master.zip" class="">Download v1.0</a></li>
+                                <li class=""><a href="https://github.com/jslegers/cascadeframework/archive/master.zip" class="">Download v1.1</a></li>
                             </ul>
                         </div>
                     </div>
@@ -96,7 +96,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col width1of4">
+                        <div class="col width-1of4">
                             <div class="cell menu">
                                 <span class="tiny">Grid types</span>
                                 <ul class="left nav links">
@@ -138,11 +138,11 @@
                                         <li>The "col" class adds the default styling rules used for the section, article, header, footer, aside and nav elements to any block level
                                             element, usually a div element. This is especially useful when you want support for old IE without relying on a Javascript based shiv.</li>
                                         <li>You can add a percentage based width to your section, article, header, footer, aside and nav elements or your block level element with a "col" class
-                                            by adding a class that has the format "sizeXofY". Y can be 2,3,4,5,6,7,8,9,10,12,16 or 24 and X can be any value between 1 and Y-1.</li>
+                                            by adding a class that has the format "width-XofY". Y can be 2,3,4,5,6,7,8,9,10,12,16 or 24 and X can be any value between 1 and Y-1.</li>
                                         <li>The "width-fit" class can be used as a wrapper for elements that have a fixed width and automaticly takes the width of that element. It is especially
                                             useful as a wrapper for images as part of the media object pattern.</li>
                                         <li>The "width-fill" class can be used to get an element to fill any remaining space in its container element. It is especially useful to compensate for rounding
-                                            errors in old IE when using the "sizeXofY" class or custom percentage based widths, but also as part of the media object pattern.</li>
+                                            errors in old IE when using the "width-XofY" class or custom percentage based widths, but also as part of the media object pattern.</li>
                                     </ul>
                                     <p>
                                         Herebelow, you see an example of how to use the presentational grid classes.
@@ -157,13 +157,13 @@
                                                 <div class="cell">
                                                     col
                                                     <div class="col">
-                                                        <div class="col width1of2">
+                                                        <div class="col width-1of2">
                                                             <div class="cell">
-                                                                col width1of2
+                                                                col width-1of2
                                                                 <div class="col">
-                                                                    <div class="col width2of3">
+                                                                    <div class="col width-2of3">
                                                                         <div class="cell">
-                                                                            col width2of3
+                                                                            col width-2of3
                                                                         </div>
                                                                     </div>
                                                                     <div class="col width-fill">
@@ -178,9 +178,9 @@
                                                             <div class="cell">
                                                                 col width-fill
                                                                 <div class="col">
-                                                                    <div class="col width1of2">
+                                                                    <div class="col width-1of2">
                                                                         <div class="cell">
-                                                                            col width1of2
+                                                                            col width-1of2
                                                                         </div>
                                                                     </div>
                                                                     <div class="col width-fill">
@@ -198,36 +198,14 @@
                                                 <div class="cell">
                                                     col
                                                     <div class="col">
-                                                        <div class="col width1of3">
+                                                        <div class="col width-1of3">
                                                             <div class="cell">
-                                                                col width1of3
+                                                                col width-1of3
                                                             </div>
                                                         </div>
-                                                        <div class="col width1of3">
+                                                        <div class="col width-1of3">
                                                             <div class="cell">
-                                                                col width1of3
-                                                            </div>
-                                                        </div>
-                                                        <div class="col width-fill">
-                                                            <div class="cell">
-                                                                col width-fill
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="cell">
-                                                    col
-                                                    <div class="col">
-                                                        <div class="col width2of5">
-                                                            <div class="cell">
-                                                                col width2of5
-                                                            </div>
-                                                        </div>
-                                                        <div class="col width2of5">
-                                                            <div class="cell">
-                                                                col width2of5
+                                                                col width-1of3
                                                             </div>
                                                         </div>
                                                         <div class="col width-fill">
@@ -242,13 +220,35 @@
                                                 <div class="cell">
                                                     col
                                                     <div class="col">
-                                                        <div class="col width4of5">
+                                                        <div class="col width-2of5">
                                                             <div class="cell">
-                                                                col site4of5
+                                                                col width-2of5
+                                                            </div>
+                                                        </div>
+                                                        <div class="col width-2of5">
+                                                            <div class="cell">
+                                                                col width-2of5
+                                                            </div>
+                                                        </div>
+                                                        <div class="col width-fill">
+                                                            <div class="cell">
+                                                                col width-fill
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="cell">
+                                                    col
+                                                    <div class="col">
+                                                        <div class="col width-4of5">
+                                                            <div class="cell">
+                                                                col width-4of5
                                                                 <div class="col">
-                                                                    <div class="col width1of2">
+                                                                    <div class="col width-1of2">
                                                                         <div class="cell">
-                                                                            col width1of2
+                                                                            col width-1of2
                                                                         </div>
                                                                     </div>
                                                                     <div class="col width-fill">
@@ -271,17 +271,17 @@
                                                 <div class="cell">
                                                     col
                                                     <div class="col">
-                                                        <div class="col width4of5">
+                                                        <div class="col width-4of5">
                                                             <div class="cell">
-                                                                col site4of5
+                                                                col width-4of5
                                                                 <div class="col">
-                                                                    <div class="col width4of5">
+                                                                    <div class="col width-4of5">
                                                                         <div class="cell">
-                                                                            col site4of5
+                                                                            col width-4of5
                                                                             <div class="col">
-                                                                                <div class="col width2of3">
+                                                                                <div class="col width-2of3">
                                                                                     <div class="cell">
-                                                                                        col width2of3
+                                                                                        col width-2of3
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col width-fill">
@@ -334,7 +334,7 @@
                                     <p>
                                         If you use Cascade Framework's responsive mechanism, all widths for section, article, header, footer, aside and nav elements and block level
                                         elements with a "col" class are reset back to 100%. This behavior can be overwritten by screen width specific classes that
-                                        have the format "A-sizeXofY", "A-width-fit" or "A-width-fill", where A can be "phone", "tablet" or "mobile".
+                                        have the format "A-width-XofY", "A-width-fit" or "A-width-fill", where A can be "phone", "tablet" or "mobile".
                                     </p>
                                     <p>
                                         In the example below, tablet specific presentational classes have been added to adjust the layout only for the screen range
@@ -350,14 +350,14 @@
                                                 <div class="cell">
                                                     col
                                                     <div class="col">
-                                                        <div class="col width1of2">
+                                                        <div class="col width-1of2">
                                                             <div class="cell">
-                                                                col width1of2
+                                                                col width-1of2
                                                                 <div class="col">
-                                                                    <div class="col width2of3 tablet-width1of2">
+                                                                    <div class="col width-2of3 tablet-width-1of2">
                                                                         <div class="cell">
-                                                                            col width2of3<br/>
-                                                                            tablet-width1of2
+                                                                            col width-2of3<br/>
+                                                                            tablet-width-1of2
                                                                         </div>
                                                                     </div>
                                                                     <div class="col width-fill tablet-width-fill">
@@ -373,10 +373,10 @@
                                                             <div class="cell">
                                                                 col width-fill
                                                                 <div class="col">
-                                                                    <div class="col width1of2 tablet-width2of3">
+                                                                    <div class="col width-1of2 tablet-width-2of3">
                                                                         <div class="cell">
-                                                                            col width1of2<br/>
-                                                                            tablet-width2of3
+                                                                            col width-1of2<br/>
+                                                                            tablet-width-2of3
                                                                         </div>
                                                                     </div>
                                                                     <div class="col width-fill tablet-width-fill">
@@ -395,15 +395,15 @@
                                                 <div class="cell">
                                                     col
                                                     <div class="col">
-                                                        <div class="col width1of3 tablet-width3of4">
+                                                        <div class="col width-1of3 tablet-width-3of4">
                                                             <div class="cell">
-                                                                col width1of3<br/>
-                                                                tablet-width3of4
+                                                                col width-1of3<br/>
+                                                                tablet-width-3of4
                                                             </div>
                                                         </div>
-                                                        <div class="col width1of3 tablet-width-fill">
+                                                        <div class="col width-1of3 tablet-width-fill">
                                                             <div class="cell">
-                                                                col width1of3<br/>
+                                                                col width-1of3<br/>
                                                                 tablet-width-fill
                                                             </div>
                                                         </div>
@@ -419,14 +419,14 @@
                                                 <div class="cell">
                                                     col
                                                     <div class="col">
-                                                        <div class="col width2of5">
+                                                        <div class="col width-2of5">
                                                             <div class="cell">
-                                                                col width2of5
+                                                                col width-2of5
                                                             </div>
                                                         </div>
-                                                        <div class="col width2of5">
+                                                        <div class="col width-2of5">
                                                             <div class="cell">
-                                                                col width2of5
+                                                                col width-2of5
                                                             </div>
                                                         </div>
                                                         <div class="col width-fill">
@@ -441,14 +441,14 @@
                                                 <div class="cell">
                                                     col
                                                     <div class="col">
-                                                        <div class="col width4of5 tablet-width1of2">
+                                                        <div class="col width-4of5 tablet-width-1of2">
                                                             <div class="cell">
-                                                                col site4of5<br/>
-                                                                tablet-width1of2 
+                                                                col width-4of5<br/>
+                                                                tablet-width-1of2
                                                                 <div class="col">
-                                                                    <div class="col width1of2">
+                                                                    <div class="col width-1of2">
                                                                         <div class="cell">
-                                                                            col width1of2
+                                                                            col width-1of2
                                                                         </div>
                                                                     </div>
                                                                     <div class="col width-fill">
@@ -462,7 +462,7 @@
                                                         <div class="col width-fill tablet-width-fill ">
                                                             <div class="cell">
                                                                 col width-fill<br/>
-                                                                tablet-width-fill 
+                                                                tablet-width-fill
                                                             </div>
                                                         </div>
                                                     </div>
@@ -472,19 +472,19 @@
                                                 <div class="cell">
                                                     col
                                                     <div class="col">
-                                                        <div class="col width4of5">
+                                                        <div class="col width-4of5">
                                                             <div class="cell">
-                                                                col site4of5
+                                                                col width-4of5
                                                                 <div class="col">
-                                                                    <div class="col width4of5 tablet-width2of3">
+                                                                    <div class="col width-4of5 tablet-width-2of3">
                                                                         <div class="cell">
-                                                                            col site4of5<br/>
-                                                                            tablet-width2of3 
+                                                                            col width-4of5<br/>
+                                                                            tablet-width-2of3
                                                                             <div class="col">
-                                                                                <div class="col width2of3 tablet-width2of5">
+                                                                                <div class="col width-2of3 tablet-width-2of5">
                                                                                     <div class="cell">
-                                                                                        col width2of3<br/>
-                                                                                        tablet-width2of5
+                                                                                        col width-2of3<br/>
+                                                                                        tablet-width-2of5
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="col width-fill tablet-width-fill">
@@ -546,13 +546,13 @@
                                             <div class="col">
                                                 <div class="cell">
                                                     <div class="col site-header">
-                                                        <div class="col width4of5 float-right">
+                                                        <div class="col width-4of5 float-right">
                                                             <div class="cell">
                                                                 <h2>Basic blog layout</h2>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col aside width1of5">
+                                                    <div class="col aside width-1of5">
                                                         <div class="cell menu">
                                                             <ul class="left links nav">
                                                                 <li class="active"><a href="#">Blog</a></li>
@@ -600,7 +600,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="site-footer">
-                                                        <div class="col width4of5 float-right">
+                                                        <div class="col width-4of5 float-right">
                                                             <div class="cell pipes">
                                                                 <ul class="nav">
                                                                     <li><a href="#">Sitemap</a></li>
