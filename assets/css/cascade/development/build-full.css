@@ -1225,43 +1225,43 @@ input:focus,textarea:focus {
 }
 
 .background-blue {
-    background:#15628e !important;
+    background-color:#15628e !important;
 }
 
 .background-green {
-    background:#46a546 !important;
+    background-color:#46a546 !important;
 }
 
 .background-red {
-    background:#9d261d !important;
+    background-color:#9d261d !important;
 }
 
 .background-yellow {
-    background:#ffc40d !important;
+    background-color:#ffc40d !important;
 }
 
 .background-orange {
-    background:#f89406 !important;
+    background-color:#f89406 !important;
 }
 
 .background-pink {
-    background:#f49ac1 !important;
+    background-color:#f49ac1 !important;
 }
 
 .background-purple {
-    background:#7a43b6 !important;
+    background-color:#7a43b6 !important;
 }
 
 .background-grey {
-    background:#999 !important;
+    background-color:#999 !important;
 }
 
 .background-black {
-    background:#333 !important;
+    background-color:#333 !important;
 }
 
 .background-white {
-    background:#fff !important;
+    background-color:#fff !important;
 }
 
 .background-blue,.background-green,.background-red,.background-yellow,.background-orange,.background-pink,.background-purple,.background-grey,.background-black {
