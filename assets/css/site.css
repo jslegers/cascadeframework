@@ -161,6 +161,11 @@
     margin:0;
 }
 
+.sitemenutags .nav a:hover {
+    color:#536d86;
+    background:#abbfcb;
+}
+
 .centered-content .content {
     width:75%;
 }
