@@ -1018,7 +1018,7 @@ sub,sup,.label {
 }
 
 table.box-header th {
-    background-color:#3981a7;
+    background-color:#2b80a4;
     color:#fff;
 }
 
@@ -1092,7 +1092,7 @@ table,.site-body,.panel,.menu .links a:hover,.tabs .nav a,.tab-block .tabs .nav 
 }
 
 .masthead,.menu a:hover,.menu-tabs .menu .nav,.menu-tabs .active a,.menu-tabs .tabs .nav .active a,.menu-tabs .active a:hover,.menu-tabs .tabs .active a:hover {
-    background:#3981a7;
+    background:#2b80a4;
 }
 
 .pagination a {
@@ -1118,11 +1118,11 @@ table,.site-body,.panel,.menu .links a:hover,.tabs .nav a,.tab-block .tabs .nav 
 }
 
 .site-header .nav a:hover {
-    color:#8b8d8f;
+    color:#ccc;
 }
 
 .site-header .nav a {
-    color:#717376;
+    color:#999;
 } 
 
 .tiny {
