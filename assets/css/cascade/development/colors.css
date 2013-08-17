@@ -60,7 +60,7 @@ body,.site-footer,.site-footer-fixture,pre,button,.panel .footer,.button,.menu .
     background-color:#f7f7f9;
 }
 
-table,.site-body,.panel,.menu .links a:hover,.tabs .nav a,.tab-block .tabs .nav .active a,.tab-content,.tab-block .panel .body,.tabs .nav .active a:hover {
+input,textarea,select,table,.site-body,.panel,.menu .links a:hover,.tabs .nav a,.tab-block .tabs .nav .active a,.tab-content,.tab-block .panel .body,.tabs .nav .active a:hover {
     background-color:#fff;
 }
 

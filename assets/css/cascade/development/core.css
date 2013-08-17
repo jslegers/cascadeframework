@@ -758,7 +758,7 @@ abbr {
     cursor:help;
 }
 
-label,button,.button,a,.nav .disabled {
+label,button,.button,a,.nav .disabled,.collapse-trigger {
     cursor:pointer;
 }
 
