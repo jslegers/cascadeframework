@@ -6,9 +6,16 @@ if (!Array.isArray) {
 
 window.App = (function(w, document) {
     var App = {
+        jsmodulePath: 'module',
+        jsappPath: 'app',
+        jssitePath: 'site',
+        jsjqueryPath: 'jquery',
+        jsshimPath: 'shim',
         trackingcode: 'UA-38735730-1',
-        logging: true,
+        logging: false,
         logload: true,
+        docHost: window.location.hostname,
+        docPath: window.location.pathname,
         jsroot: function(filename) {
             var scripts = document.getElementsByTagName('script');
             if (scripts && scripts.length > 0) {
@@ -19,13 +26,9 @@ window.App = (function(w, document) {
                 }
             }
         }('app'),
-        docHost: window.location.hostname,
-        docPath: window.location.pathname,
-        jsmodulePath: 'module',
-        jsappPath: 'app',
-        jssitePath: 'site',
-        jsjqueryPath: 'jquery',
-        jsshimPath: 'shim',
+        exists: function(arg){
+            return typeof arg !== "undefined";
+        },
         relativePath: function(path) {
             return App.jsroot + path;
         },
@@ -45,7 +48,7 @@ window.App = (function(w, document) {
             return App.modulePath(App.jsjqueryPath + '/' + path);
         },
         log: function(value) {
-            if (App.logging && typeof window.console !== 'undefined') {
+            if (App.logging && App.exists(window.console)) {
                 console.log(value);
             }
         },
@@ -59,14 +62,14 @@ window.App = (function(w, document) {
             var arg;
             for (var i = 0; i < length; i++) {
                 arg = args[i];
-                if (typeof arg.callback === "undefined") {
+                if (!App.exists(arg.callback)) {
                     arg.callback = function() {
                     };
                 }
-                if (typeof arg.name === "undefined") {
+                if (!App.exists(arg.name)) {
                     arg.name = arg.id;
                 }
-                if (typeof arg.dependencies === "undefined") {
+                if (!App.exists(arg.dependencies)) {
                     arg.dependencies = [];
                 } else if (!Array.isArray(arg.dependencies)) {
                     arg.dependencies = [arg.dependencies];
@@ -82,14 +85,14 @@ window.App = (function(w, document) {
             }
         },
         load: function(loading, toload, callback) {
-            if (typeof callback === "undefined") {
+            if (!App.exists(callback)) {
                 callback = function() {
                 };
             }
-            if (typeof loading === "undefined") {
+            if (!App.exists(loading)) {
                 loading = [];
             }
-            if (typeof toload === "undefined") {
+            if (!App.exists(toload)) {
                 loading = {load: {}};
             }
             var asset;
@@ -140,7 +143,7 @@ window.App = (function(w, document) {
             for (var h = 0; h < lengthargs; h++) {
                 arg = args[h];
                 callback = arg.callback;
-                if (typeof arg.callback === "undefined") {
+                if (!App.exists(arg.callback)) {
                     arg.callback = function() {
                     };
                 }
@@ -194,7 +197,7 @@ window.App = (function(w, document) {
         },
         initialize: function(callback) {
             var l = document.createElement('script');
-            l.src = App.jsroot + 'app/yepnope.js';
+            l.src = App.appPath('yepnope.js');
             l.type = 'text/javascript';
             l.async = 'true';
             l.onload = l.onreadystatechange = function() {
