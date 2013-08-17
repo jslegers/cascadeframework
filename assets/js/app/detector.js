@@ -705,9 +705,9 @@ window.Detector = (function( window, document, undefined ) {
         classes.push('opera');
     } 
     if(Detector.browser.msie && Detector.browser.version < 9){
-        Detector.jqueryversion = '1.9';
+        Detector.jquerylegacy = true;
     } else {
-        Detector.jqueryversion = '2.0';
+        Detector.jquerylegacy = false;
     }
     docElement.className = docElement.className.replace(/(^|\s)no-js(\s|$)/, '$1$2') +
     (enableClasses ? ' js ' + classes.join(' ') : '');
