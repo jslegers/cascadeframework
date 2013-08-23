@@ -233,7 +233,7 @@ App.initialize(function() {
         }, {
             id: 'definitions',
             name: 'Site definitions',
-            path: App.sitePath('definitions.js')
+            path: App.modulePath('definitions.js')
         }, {
             id: 'base',
             name: 'Site wide custom JS',
