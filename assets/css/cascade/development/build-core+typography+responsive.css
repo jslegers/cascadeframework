@@ -130,7 +130,7 @@ header:before,header:after,hgroup:before,hgroup:after,nav:before,nav:after,secti
 pre:before,pre:after,.nav:before,.nav:after,.nav a:before,.nav a:after,.width-fill:before,.width-fill:after,
 .width-fit img:before,.width-fit img:after,blockquote small:before,blockquote small:after,address:before,address:after,
 .nav ul:before,.nav ul:after,.nav li:before,.nav li:after {
-    content:""; display:table;
+    content:" "; display:table;
 }
 
 li {
@@ -143,6 +143,10 @@ li {
 
 audio:not([controls]) {
     display:none;
+}
+
+.parsley-error-list,.parsley-error-list li {
+    display: inline !important;
 }
 
 .tabs .nav {
@@ -187,6 +191,10 @@ td,th {
     position:static;
 }
 
+.parsley-error-list {
+    right: 0;
+}
+
 .site-header-fixture .site-header,.menu .data {
     top:0;
     right:0;
@@ -200,7 +208,7 @@ td,th {
     _position:absolute;
 }
 
-.site-footer-fixture,.menu .data {
+.parsley-error-list,.site-footer-fixture,.menu .data {
     position:absolute;
 }
 
@@ -419,9 +427,8 @@ input.button,button,button.button {
     *padding:3px 9px 1px;
 }
 
-
-input,textarea,.tags .nav li.disabled,select,.tags .nav a,.icon-button {
-    padding:4px 4px;
+input,textarea,.parsley-error-list,.tags .nav li.disabled,select,.tags .nav a,.icon-button {
+    padding:4px;
 }
 
 button.icon-button {
@@ -758,7 +765,7 @@ abbr {
     cursor:help;
 }
 
-label,button,.button,a,.nav .disabled {
+label,button,.button,a,.nav .disabled,.collapse-trigger {
     cursor:pointer;
 }
 
@@ -867,7 +874,7 @@ pre {
     word-wrap:break-word;
 }
 
-b,th,strong,h1,h2,h3,h4,h5,h6,dt,.label,.fatty,.panel .header,.tags .blocks a,.tags .blocks .disabled,.pipes .stat a,.menu .links li,.site-header-ghost .nav a,.site-header .nav a,.tabs .active a {
+b,th,strong,h1,h2,h3,h4,h5,h6,dt,.label,.fatty,.panel .header,.tags .blocks a,.tags .blocks .disabled,.pipes .stat a,.parsley-error-list li,.menu .links li,.site-header-ghost .nav a,.site-header .nav a,.tabs .active a {
     font-weight:700;
 }
 
@@ -1068,11 +1075,18 @@ sub,sup,.label {
         position: relative !important;
     }
 
+    .parsley-error-list {
+        position: static;
+        display: block !important;
+        margin-left:3px;
+    }
+
     .site-header-ghost {
         display: none !important;
     }
 
-    section,article,header,footer,aside,nav,.col,
+    main,section,article,header,footer,aside,nav,.col,
+    main.width-fit,main.width-fill,
     section.width-fit,section.width-fill,
     article.width-fit,article.width-fill,
     header.width-fit,header.width-fill,
@@ -1109,6 +1123,7 @@ sub,sup,.label {
    ========================================================================== */
 
 @media (max-width: 767px) {
+	main.mobile-width-fill,
     section.mobile-width-fill,
     article.mobile-width-fill,
     header.mobile-width-fill,
@@ -1116,6 +1131,7 @@ sub,sup,.label {
     aside.mobile-width-fill,
     nav.mobile-width-fill,
     .col.mobile-width-fill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
+	main.mobile-width-fit,
     section.mobile-width-fit,
     article.mobile-width-fit,
     header.mobile-width-fit,
@@ -1132,6 +1148,7 @@ sub,sup,.label {
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+	main.mobile-width-fill,
     section.tablet-width-fill,
     article.tablet-width-fill,
     header.tablet-width-fill,
@@ -1139,6 +1156,7 @@ sub,sup,.label {
     aside.tablet-width-fill,
     nav.tablet-width-fill,
     .col.tablet-width-fill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
+	main.mobile-width-fill,
     section.tablet-width-fit,
     article.tablet-width-fit,
     header.tablet-width-fit,
@@ -1155,6 +1173,7 @@ sub,sup,.label {
 }
 
 @media (max-width: 480px) {
+	main.phone-width-fill,
     section.phone-width-fill,
     article.phone-width-fill,
     header.phone-width-fill,
@@ -1162,6 +1181,7 @@ sub,sup,.label {
     aside.phone-width-fill,
     nav.phone-width-fill,
     .col.phone-width-fill {display:table-cell !important;float:none!important;min-width:50px!important;width:10000px!important;}
+    main.phone-width-fit,
     section.phone-width-fit,
     article.phone-width-fit,
     header.phone-width-fit,

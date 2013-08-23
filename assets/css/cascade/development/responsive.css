@@ -117,6 +117,12 @@
         position: relative !important;
     }
 
+    .parsley-error-list {
+        position: static;
+        display: block !important;
+        margin-left:3px;
+    }
+
     .site-header-ghost {
         display: none !important;
     }

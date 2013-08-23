@@ -12,7 +12,9 @@
         <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style type="text/css">
-
+            .collapse-section .stat a {
+                padding-left: 40px;
+            }
         </style>
     </head>
     <body class="narrow">
@@ -22,7 +24,7 @@
                     <div class="tags sitemenutags">
                         <div class="cell">
                             <ul class="nav blocks">
-                                <li><a href="https://github.com/jslegers/cascadeframework/archive/master.zip">Download v1.4</a></li>
+                                <li><a href="https://github.com/jslegers/cascadeframework/archive/master.zip">Download v1.5</a></li>
                             </ul>
                         </div>
                     </div>
@@ -774,28 +776,28 @@
                                                     </div>
                                                     <div class="body">
                                                         <div class="cell">
-                                                            <form>
+                                                            <form action="#" method="post">
                                                                 <div class="col">
                                                                     <div class="col width-1of4">
                                                                         <div class="cell">
-                                                                            <label for="firstname">First name</label>
+                                                                            <label for="firstname">First name<span class="color-red"> *</span></label>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col width-fill">
                                                                         <div class="cell">
-                                                                            <input type="text" id="firstname" placeholder="Your first name" class="text">
+                                                                            <input type="text" id="firstname" placeholder="Your first name"  data-required="true" data-error-message="First name is required">
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col">
                                                                     <div class="col width-1of4">
                                                                         <div class="cell">
-                                                                            <label for="lastname">Last name</label>
+                                                                            <label for="lastname">Last name<span class="color-red"> *</span></label>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col width-fill">
                                                                         <div class="cell">
-                                                                            <input type="text" id="lastname" placeholder="Your last name" class="text">
+                                                                            <input type="text" id="lastname" placeholder="Your last name" data-required="true" data-error-message="Last name is required">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -862,12 +864,12 @@
                                                                 <div class="col">
                                                                     <div class="col width-1of4">
                                                                         <div class="cell">
-                                                                            <label for="comment">Comment</label>
+                                                                            <label for="comment">Comment<span class="color-red"> *</span></label>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col width-fill">
                                                                         <div class="cell">
-                                                                            <textarea id="comment"></textarea>
+                                                                            <textarea id="comment" data-required="true" data-error-message="Comment is required"></textarea>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -876,7 +878,7 @@
                                                                     </div>
                                                                     <div class="col width-fill">
                                                                         <div class="cell">
-                                                                            <button class="button">Submit</button>
+                                                                            <button class="button" type="submit">Submit</button>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -903,26 +905,227 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col leuven">
+                                            <div class="col">
                                                 <div class="cell panel">
                                                     <div class="body">
                                                         <div class="cell">
-                                                            <figure class="nuremberg">  
-                                                                <img src="assets/img/other/leuven.jpg" alt=""> 
-                                                                <figcaption>Leuven</figcaption>  
-                                                            </figure>  
+                                                            <div class="col width-fit">
+                                                                <div class="cell">
+                                                                    <img src="assets/img/64x64.gif" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col width-fill">
+                                                                <div class="col">
+                                                                    <div class="cell">
+                                                                        <a href="#">Irene</a> says:<br>
+                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis adipiscing est. Curabitur vel dui dolor. Vestibulum molestie fermentum diam, nec interdum ante molestie ut. Integer consequat iaculis auctor. Duis vitae felis ligula, ultrices blandit dolor.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="cell">
+                                                                        <a href="#">Monica</a> likes this comment!<br>
+                                                                        <a href="#">Chen</a> likes this comment!
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col leuven">
+                                            <div class="col">
+                                                <div class="cell">
+                                                    <div class="panel datasheet">
+                                                        <div class="header">
+                                                            My Data
+                                                        </div>
+                                                        <table class="body">
+                                                            <thead>
+                                                                <tr class="">
+                                                                    <th style="width: 2%;">#</th>
+                                                                    <th style="width: 10%;" nowrap="nowrap">ID</th>
+                                                                    <th style="width: 20%;" nowrap="nowrap" class="">Name</th>
+                                                                    <th style="width: 22%;" nowrap="nowrap">Dept</th>
+                                                                    <th style="width: 46%;" nowrap="nowrap" class="">Notes</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="">
+                                                                    <th>1</th>
+                                                                    <td><input type="text" class="text"></td>
+                                                                    <td class=""><input type="text" class="text"></td>
+                                                                    <td><input type="text" class="text"></td>
+                                                                    <td class=""><input type="text" class="text"></td>
+                                                                </tr>
+                                                                <tr class="">
+                                                                    <th>2</th>
+                                                                    <td><input type="text" class="text"></td>
+                                                                    <td class=""><input type="text" class="text"></td>
+                                                                    <td><input type="text" class="text"></td>
+                                                                    <td class=""><input type="text" class="text"></td>
+                                                                </tr>
+                                                                <tr class="">
+                                                                    <th>3</th>
+                                                                    <td><input type="text" class="text"></td>
+                                                                    <td class=""><input type="text" class="text"></td>
+                                                                    <td><input type="text" class="text"></td>
+                                                                    <td class=""><input type="text" class="text"></td>
+                                                                </tr>
+                                                                <tr class="">
+                                                                    <th>4</th>
+                                                                    <td class=""><input type="text" class="text"></td>
+                                                                    <td><input type="text" class="text"></td>
+                                                                    <td><input type="text" class="text"></td>
+                                                                    <td><input type="text" class="text"></td>
+                                                                </tr>
+                                                                <tr class="">
+
+                                                                    <th>5</th>
+                                                                    <td class=""><input type="text" class="text"></td>
+                                                                    <td><input type="text" class="text"></td>
+                                                                    <td><input type="text" class="text"></td>
+                                                                    <td><input type="text" class="text"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <div class="footer pagination">
+                                                            <ul class="nav">
+                                                                <li class=""><a href="#" class="">Prev</a></li>
+                                                                <li><a href="#">1</a></li>
+                                                                <li><a href="#">2</a></li>
+                                                                <li><a href="#">3</a></li>
+                                                                <li><a href="#">Next</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="panel cell">
+                                                    <div class="header">
+                                                        Inventory
+                                                    </div>
+                                                    <div class="body">
+                                                        <div class="col width-1of2">
+                                                            <div class="panel cell">
+                                                                <div class="collapsible collapsed">
+                                                                    <div class="header collapse-trigger">
+                                                                        <span class="icon icon-collapse"></span>
+                                                                        <a href="#">
+                                                                            Toys
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="body collapse-section">
+                                                                        <div class="left menu">
+                                                                            <ul class="stat nav">
+                                                                                <li><a href="#">Board games</a></li>
+                                                                                <li><a href="#">Video games</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="collapsible collapsed">
+                                                                    <div class="header collapse-trigger">
+                                                                        <span class="icon icon-collapse"></span>
+                                                                        <a href="#">
+                                                                            Books
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="body collapse-section">
+                                                                        <div class="left menu">
+                                                                            <ul class="stat nav">
+                                                                                <li><a href="#">Fiction</a></li>
+                                                                                <li><a href="#">Non-fiction</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col width-fill">
+                                                            <div class="panel cell">
+                                                                <div class="collapsible collapsed">
+                                                                    <div class="header collapse-trigger">
+                                                                        <span class="icon icon-collapse"></span>
+                                                                        <a href="#">
+                                                                            Comics
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="body collapse-section">
+                                                                        <div class="left menu">
+                                                                            <ul class="stat nav">
+                                                                                <li><a href="#">Franco-Belgian</a></li>
+                                                                                <li><a href="#">Italian</a></li>
+                                                                                <li><a href="#">American</a></li>
+                                                                                <li><a href="#">Japanese</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="collapsible collapsed">
+                                                                    <div class="header collapse-trigger">
+                                                                        <span class="icon icon-collapse"></span>
+                                                                        <a href="#">
+                                                                            Clothing
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="body collapse-section">
+                                                                        <div class="left menu">
+                                                                            <ul class="stat nav">
+                                                                                <li><a href="#">T-shirts</a></li>
+                                                                                <li><a href="#">Hoodies</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
                                                 <div class="cell panel">
+                                                    <div class="header">
+                                                        Warning
+                                                    </div>
                                                     <div class="body">
                                                         <div class="cell">
-                                                            <figure class="nuremberg">  
-                                                                <img src="assets/img/other/efteling.jpg" alt=""> 
-                                                                <figcaption>Efteling</figcaption>  
-                                                            </figure>  
+                                                            <div class="col">
+                                                                <div class="cell">
+                                                                    <div class="color-red center" style="width:290px;max-width:100%;">
+                                                                        <div class="col width-fit mobile-width-fit"><span class="icon icon-warning-sign"></span>
+                                                                        </div>
+                                                                        <div class="col width-fill mobile-width-fill">
+                                                                            Something has gone wrong. Please try again!
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="col width-1of2">
+                                                    <div class="cell panel">
+                                                        <div class="body">
+                                                            <div class="cell">
+                                                                <figure class="nuremberg">  
+                                                                    <img src="assets/img/other/leuven.jpg" alt=""> 
+                                                                    <figcaption>Leuven</figcaption>  
+                                                                </figure>  
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col width-fill">
+                                                    <div class="cell panel">
+                                                        <div class="body">
+                                                            <div class="cell">
+                                                                <figure class="nuremberg">  
+                                                                    <img src="assets/img/other/efteling.jpg" alt=""> 
+                                                                    <figcaption>Efteling</figcaption>  
+                                                                </figure>  
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
