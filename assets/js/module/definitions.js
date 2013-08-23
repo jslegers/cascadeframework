@@ -28,6 +28,11 @@ App.define([{
         dependencies: 'charts',
         path: App.jqueryPath('flot/jquery.flot.categories.js')
     }, {
+        id: 'parsley',
+        name: 'Parsley',
+        dependencies: 'jquery',
+        path: App.jqueryPath('parsley/parsley.min.js')
+    }, {
         id: 'analytics',
         name: 'Google Analytics',
         path: (document.location.protocol === 'https:' ? '//ssl' : 'http://www') + '.google-analytics.com/ga.js',

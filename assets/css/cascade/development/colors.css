@@ -122,6 +122,10 @@ code {
     color:#d14;
 }
 
+.parsley-error-list li {
+    color:#9d261d;
+}
+
 pre code {
     color:inherit;
 }
