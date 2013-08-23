@@ -21,7 +21,7 @@
                     <div class="tags sitemenutags">
                         <div class="cell">
                             <ul class="nav blocks">
-                                <li class=""><a href="https://github.com/jslegers/cascadeframework/archive/master.zip" class="">Download v1.4</a></li>
+                                <li class=""><a href="https://github.com/jslegers/cascadeframework/archive/master.zip" class="">Download v1.5</a></li>
                             </ul>
                         </div>
                     </div>
@@ -114,28 +114,28 @@
                                         <div class="cell">
                                             <div class="col">
                                                 <div class="cell">
-                                                    <form>
+                                                    <form action="#" method="post">
                                                         <div class="col">
                                                             <div class="col width-1of4">
                                                                 <div class="cell">
-                                                                    <label for="firstname">First name</label>
+                                                                    <label for="firstname">First name<span class="color-red"> *</span></label>
                                                                 </div>
                                                             </div>
                                                             <div class="col width-fill">
                                                                 <div class="cell">
-                                                                    <input type="text" id="firstname" placeholder="Your first name" class="text">
+                                                                    <input type="text" id="firstname" placeholder="Your first name"  data-required="true" data-error-message="First name is required">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col">
                                                             <div class="col width-1of4">
                                                                 <div class="cell">
-                                                                    <label for="lastname">Last name</label>
+                                                                    <label for="lastname">Last name<span class="color-red"> *</span></label>
                                                                 </div>
                                                             </div>
                                                             <div class="col width-fill">
                                                                 <div class="cell">
-                                                                    <input type="text" id="lastname" placeholder="Your last name" class="text">
+                                                                    <input type="text" id="lastname" placeholder="Your last name" data-required="true" data-error-message="Last name is required">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -202,12 +202,12 @@
                                                         <div class="col">
                                                             <div class="col width-1of4">
                                                                 <div class="cell">
-                                                                    <label for="comment">Comment</label>
+                                                                    <label for="comment">Comment<span class="color-red"> *</span></label>
                                                                 </div>
                                                             </div>
                                                             <div class="col width-fill">
                                                                 <div class="cell">
-                                                                    <textarea id="comment"></textarea>
+                                                                    <textarea id="comment" data-required="true" data-error-message="Comment is required"></textarea>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -216,7 +216,7 @@
                                                             </div>
                                                             <div class="col width-fill">
                                                                 <div class="cell">
-                                                                    <button class="button">Submit</button>
+                                                                    <button class="button" type="submit">Submit</button>
                                                                 </div>
                                                             </div>
                                                         </div>

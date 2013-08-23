@@ -145,6 +145,10 @@ audio:not([controls]) {
     display:none;
 }
 
+.parsley-error-list,.parsley-error-list li {
+    display: inline !important;
+}
+
 .tabs .nav {
     float:none;
 }
@@ -187,6 +191,10 @@ td,th {
     position:static;
 }
 
+.parsley-error-list {
+    right: 0;
+}
+
 .site-header-fixture .site-header,.menu .data {
     top:0;
     right:0;
@@ -200,7 +208,7 @@ td,th {
     _position:absolute;
 }
 
-.site-footer-fixture,.menu .data {
+.parsley-error-list,.site-footer-fixture,.menu .data {
     position:absolute;
 }
 
@@ -419,9 +427,8 @@ input.button,button,button.button {
     *padding:3px 9px 1px;
 }
 
-
-input,textarea,.tags .nav li.disabled,select,.tags .nav a,.icon-button {
-    padding:4px 4px;
+input,textarea,.parsley-error-list,.tags .nav li.disabled,select,.tags .nav a,.icon-button {
+    padding:4px;
 }
 
 button.icon-button {
