@@ -159,7 +159,7 @@ pre {
     word-wrap:break-word;
 }
 
-b,th,strong,h1,h2,h3,h4,h5,h6,dt,.label,.fatty,.panel .header,.tags .blocks a,.tags .blocks .disabled,.pipes .stat a,.menu .links li,.site-header-ghost .nav a,.site-header .nav a,.tabs .active a {
+b,th,strong,h1,h2,h3,h4,h5,h6,dt,.label,.fatty,.panel .header,.tags .blocks a,.tags .blocks .disabled,.pipes .stat a,.parsley-error-list li,.menu .links li,.site-header-ghost .nav a,.site-header .nav a,.tabs .active a {
     font-weight:700;
 }
 
