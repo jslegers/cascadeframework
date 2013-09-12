@@ -171,8 +171,10 @@
     display:none !important;
 }
 
-.desktop-hidden  {
-    display:none\9 !important;
+@media \0screen\,screen\9 {
+    .desktop-hidden  {
+        display:none !important;
+    }
 }
 
 @media (min-width: 768px) {
