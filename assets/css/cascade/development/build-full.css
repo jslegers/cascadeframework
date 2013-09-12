@@ -1581,23 +1581,23 @@ input,textarea {
 }
 @-moz-keyframes spin {
     0% { -moz-transform:rotate(0deg); }
-    100% { -moz-transform:rotate(359deg); }
+100% { -moz-transform:rotate(359deg); }
 }
 @-webkit-keyframes spin {
     0% { -webkit-transform:rotate(0deg); }
-    100% { -webkit-transform:rotate(359deg); }
+100% { -webkit-transform:rotate(359deg); }
 }
 @-o-keyframes spin {
     0% { -o-transform:rotate(0deg); }
-    100% { -o-transform:rotate(359deg); }
+100% { -o-transform:rotate(359deg); }
 }
 @-ms-keyframes spin {
     0% { -ms-transform:rotate(0deg); }
-    100% { -ms-transform:rotate(359deg); }
+100% { -ms-transform:rotate(359deg); }
 }
 @keyframes spin {
     0% { transform:rotate(0deg); }
-    100% { transform:rotate(359deg); }
+100% { transform:rotate(359deg); }
 }
 
 @media (min-width:1200px) {
@@ -2030,8 +2030,10 @@ input,textarea {
     display:none !important;
 }
 
-.desktop-hidden  {
-    display:none\9 !important;
+@media \0screen\,screen\9 {
+    .desktop-hidden  {
+        display:none !important;
+    }
 }
 
 @media (min-width: 768px) {
