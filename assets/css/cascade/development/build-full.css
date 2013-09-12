@@ -2030,8 +2030,12 @@ input,textarea {
     display:none !important;
 }
 
-@media \0screen\,screen\9 {
-    .desktop-hidden  {
+.desktop-hidden {
+    *display:none !important;
+}
+
+@media \0 screen {
+    .desktop-hidden {
         display:none !important;
     }
 }
@@ -2055,7 +2059,7 @@ input,textarea {
 }
 
 @media (max-width: 480px) {
-    .phone-hidden {
+    .phone-hidden,.col.phone-hidden {
         display:none !important;
     }
 }
