@@ -34,5 +34,5 @@ Cascade Framework is MIT licensed.
  OTHER DEALINGS IN THE SOFTWARE.
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/CascadeFramework/cascadeframework/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jslegers/cascadeframework/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
