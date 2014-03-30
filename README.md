@@ -1,4 +1,4 @@
-[![endorse](https://api.coderwall.com/johnslegers/endorsecount.png)](https://coderwall.com/johnslegers)
+[![endorse](https://api.coderwall.com/johnslegers/endorsecount.png)](https://coderwall.com/johnslegers) 
 
 # Cascade Framework 1.5
 
@@ -35,3 +35,9 @@ Cascade Framework is MIT licensed.
  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  OTHER DEALINGS IN THE SOFTWARE.
 
+
+## Author
+
+| [![twitter/johnslegers](https://en.gravatar.com/avatar/bf4cc94221382810233575862875e687?s=70)](http://twitter.com/johnslegers "Follow @johnslegers on Twitter") |
+|---|
+| [John slegers](http://www.johnslegers.com/) |
