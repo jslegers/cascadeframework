@@ -1,3 +1,5 @@
+[![Stories in Ready](https://badge.waffle.io/jslegers/cascadeframework.png?label=ready&title=Ready)](https://waffle.io/jslegers/cascadeframework)
+
 [![endorse](https://api.coderwall.com/johnslegers/endorsecount.png)](https://coderwall.com/johnslegers) 
 
 # Cascade Framework 1.5
