@@ -1,4 +1,4 @@
-[![Stories in Ready](https://badge.waffle.io/jslegers/cascadeframework.png?label=ready&title=Ready)](https://waffle.io/jslegers/cascadeframework)
+[![Stories in Ready](https://badge.waffle.io/jslegers/cascadeframework.png?label=ready&title=Ready)](https://waffle.io/jslegers/cascadeframework) [![Stories in Ready](http://img.shields.io/badge/version-1.5-green.svg)](http://www.cascade-framework.com/)
 
 [![endorse](https://api.coderwall.com/johnslegers/endorsecount.png)](https://coderwall.com/johnslegers) 
 
