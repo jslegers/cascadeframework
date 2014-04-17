@@ -1,0 +1,21 @@
+{
+  "name": "cascade-framework",
+  "version": "1.5.0",
+  "homepage": "https://github.com/jslegers/cascadeframework",
+  "authors": [
+    "John Slegers"
+  ],
+  "description": "CSS framework that puts back the C in CSS",
+  "keywords": [
+    "css",
+    "js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
