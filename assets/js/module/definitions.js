@@ -33,16 +33,16 @@ App.define([{
         dependencies: 'jquery',
         path: App.jqueryPath('parsley/parsley.min.js')
     }, {
-		id: 'analytics-dep',
-		name: 'Google Analytics Dependency',
-		path: App.relativePath('module/google/analytics.js')
-	}, {
-		id: 'analytics',
-		name: 'Google Analytics',
-		dependencies: 'analytics-dep',
-		path: (document.location.protocol === 'https:' ? '//ssl' : 'http://www') + '.google-analytics.com/analytics.js',
-		callback: function() {
-			ga('create', App.trackingcode, 'cascade-framework.com');
-			ga('send', 'pageview');
-		}
-	}]);
+    	id: 'analytics-dep',
+    	name: 'Google Analytics Dependency',
+    	path: App.relativePath('module/google/analytics.js')
+    }, {
+    	id: 'analytics',
+    	name: 'Google Analytics',
+    	dependencies: 'analytics-dep',
+    	path: (document.location.protocol === 'https:' ? '//ssl' : 'http://www') + '.google-analytics.com/analytics.js',
+    	callback: function() {
+            ga('create', App.trackingcode, 'cascade-framework.com');
+            ga('send', 'pageview');
+        }
+    }]);
