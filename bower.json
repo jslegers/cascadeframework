@@ -13,7 +13,7 @@
   "license": "MIT",
   "main": [
     "assets/**/*"
-  ]
+  ],
   "ignore": [
     "**/.*",
     "assets/**/*.min.css",
