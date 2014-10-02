@@ -11,8 +11,12 @@
     "js"
   ],
   "license": "MIT",
+  "main": [
+    "assets/**/*"
+  ]
   "ignore": [
     "**/.*",
+    "assets/**/*.min.css",
     "node_modules",
     "bower_components",
     "test",
