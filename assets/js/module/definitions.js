@@ -1,7 +1,7 @@
 App.define([{
         id: 'jquery',
         name: 'jQuery',
-        path: Detector.jquerylegacy ? App.jqueryPath('jquery-1.10.2.min.js') : App.jqueryPath('jquery-2.0.3.min.js')
+        path: Detector.jquerylegacy ? App.jqueryPath('jquery-1.11.1.min.js') : App.jqueryPath('jquery-2.1.1.min.js')
     }, {
         id: 'easing',
         name: 'Easing',
