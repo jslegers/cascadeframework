@@ -38,7 +38,7 @@
                 font-size: 40px;
                 line-height: 100%;
                 font-weight: 700;
-                width:420px;
+                width:440px;
                 text-shadow: #2a5267 1px 2px 2px;
             }
 
@@ -60,9 +60,35 @@
                 width:13%;
             }
 
+            .gallery .nav {
+                width: 100%;
+            }
+
+            .gallery li {
+                width: 25%;
+                *width:24.8%;
+                min-height: 1px;
+            }
+
+            .gallery a {
+                height: 0;
+                padding-bottom: 70.16%;
+                margin: 5px;
+                position: relative;
+                float: none;
+                *padding:0;
+                *height: 149px;
+            }
+
             .gallery img {
+                float: none;
                 border-width:2px;
                 border-color:#999;
+                position: absolute;
+                left:0;
+                top:0;
+                width:100%;
+                height:100%;
             }
 
             .gallery img:hover {
@@ -114,6 +140,11 @@
             }
 
 
+            @media (max-width: 600px) {
+
+            .gallery li {
+                width: 50%;
+            }
 
             @media (max-width:410px) {
                 .masthead .slogan {
@@ -158,7 +189,7 @@
                     <div class="tags sitemenutags">
                         <div class="cell">
                             <ul class="nav blocks">
-                                <li class=""><a href="https://github.com/jslegers/cascadeframework/archive/master.zip" class="">Download v1.5</a></li>
+                                <li class=""><a href="https://github.com/jslegers/cascadeframework/archive/master.zip" class="">Download v1.6</a></li>
                             </ul>
                         </div>
                     </div>
@@ -176,13 +207,35 @@
                         </div>
                     </div>
                 </div>
+                <div class="sitemenu-responsive col collapsible collapsed">
+                    <div class="col collapse-trigger">
+                        <div class="cell">
+                            <ul class="nav ">
+                                <li><a href="#"><span class="icon icon-32 icon-align-justify"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="left collapse-section">
+                            <div class="cell">
+                                <ul class="nav">
+                                    <li><a href="grid.html">Grid</a></li>
+                                    <li><a href="typography.html">Typography</a></li>
+                                    <li><a href="icons.html">Icons</a></li>
+                                    <li><a href="components.html">Components</a></li>
+                                    <li><a href="templates.html">Templates</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="site-header">
                 <div class="site-center">
                     <div class="tags sitemenutags">
                         <div class="cell">
                             <ul class="nav blocks">
-                                <li class=""><a href="https://github.com/jslegers/cascadeframework/archive/master.zip" class="">Download v1.5</a></li>
+                                <li class=""><a href="https://github.com/jslegers/cascadeframework/archive/master.zip" class="">Download v1.6</a></li>
                             </ul>
                         </div>
                     </div>
@@ -346,8 +399,8 @@
                                             <li><a href="http://www.ciooffice.se/ea/ea-navigation/ea-navigation.htm" target="_blank"><img src="assets/img/showcase/ciooffice.png"></a></li>
                                             <li><a href="http://towan.sakura.ne.jp/towan_kanko/index.php" target="_blank"><img src="assets/img/showcase/towan.png"></a></li>
                                             <li><a href="http://baojia.xianlan114.com/" target="_blank"><img src="assets/img/showcase/xianlan114.png"></a></li>
-				            <li><a href="http://grandale.org/" target="_blank"><img src="assets/img/showcase/grandale.png"></a></li>
-				            <li><a href="http://www.seasure.co.uk/" target="_blank"><img src="assets/img/showcase/seasure.png"></a></li>
+                                            <li><a href="http://grandale.org/" target="_blank"><img src="assets/img/showcase/grandale.png"></a></li>
+                                            <li><a href="http://www.seasure.co.uk/" target="_blank"><img src="assets/img/showcase/seasure.png"></a></li>
                                             <li><a href="http://www.marcushurley.com/" target="_blank"><img src="assets/img/showcase/huxley.png"></a></li>
                                             <!-- 
                                             <li><a href="http://coshg.org/" target="_blank"><img src="assets/img/showcase/coshg.png"></a></li>
@@ -370,160 +423,160 @@
                             </div>
                         </div>
                     </div>
-                <div class="col">
-                    <div class="cell">
-                        <h2>Cascade Modules</h2>
-                        <p>The following table gives an overview of the available Cascade modules.</p>
+                    <div class="col">
+                        <div class="cell">
+                            <h2>Cascade Modules</h2>
+                            <p>The following table gives an overview of the available Cascade modules.</p>
 
-                        <table class="outline-header border box-header outline files" summary="Employee Pay Sheet">
-                            <thead>
-                                <tr>
-                                    <th class="name">File</th>
-                                    <th class="content mobile-hidden">Content</th>
-                                    <th class="minified">Minified</th>
-                                    <th class="gzipped">Gzipped</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>core.css</td>
-                                    <td class="mobile-hidden">Cross-browser rules for building your page structure.</td>
-                                    <td>8545 B</td>
-                                    <td>2653 B</td>
-                                </tr>
-                                <tr>
-                                    <td>typography.css</td>
-                                    <td class="mobile-hidden">Font sizes, line heights and other typographical rules</td>
-                                    <td>2976 B</td>
-                                    <td>1133 B</td>
-                                </tr>
-                                <tr>
-                                    <td>tables.css</td>
-                                    <td class="mobile-hidden">Classes that can be combined to layout your HTML tables</td>
-                                    <td>1108 B</td>
-                                    <td>370 B</td>
-                                </tr>
-                                <tr>
-                                    <td>colors.css</td>
-                                    <td class="mobile-hidden">Text colors, backgrounds and border colors</td>
-                                    <td>5354 B</td>
-                                    <td>1695 B</td>
-                                </tr>
-                                <tr>
-                                    <td>modern.css</td>
-                                    <td class="mobile-hidden">Rounded corners, box-shadow and other CSS3 styles</td>
-                                    <td>3731 B</td>
-                                    <td>819 B</td>
-                                </tr>
-                                <tr>
-                                    <td>helpers.css</td>
-                                    <td class="mobile-hidden">Generic helper classes</td>
-                                    <td>1226 B</td>
-                                    <td>394 B</td>
-                                </tr>
-                                <tr>
-                                    <td>grids.css</td>
-                                    <td class="mobile-hidden">Presentational grid classes</td>
-                                    <td>1784 B</td>
-                                    <td>465 B</td>
-                                </tr>
-                                <tr>
-                                    <td>responsive.css</td>
-                                    <td class="mobile-hidden">Responsive support</td>
-                                    <td>2980 B</td>
-                                    <td>653 B</td>
-                                </tr>
-                                <tr>
-                                    <td>mobile-grids.css</td>
-                                    <td class="mobile-hidden">Mobile specific grid classes</td>
-                                    <td>2970 B</td>
-                                    <td>555 B</td>
-                                </tr>
-                                <tr>
-                                    <td>tablet-grids.css</td>
-                                    <td class="mobile-hidden">Tablet specific grid classes</td>
-                                    <td>2992 B</td>
-                                    <td>569 B</td>
-                                </tr>
-                                <tr>
-                                    <td>phone-grids.css</td>
-                                    <td class="mobile-hidden">Phone specific grid classes</td>
-                                    <td>2877 B</td>
-                                    <td>550 B</td>
-                                </tr>
-                                <tr>
-                                    <td>icons.css</td>
-                                    <td class="mobile-hidden">Icons</td>
-                                    <td>14362 B</td>
-                                    <td>2792 B</td>
-                                </tr>
-                                <tr>
-                                    <td>icons-ie7.css</td>
-                                    <td class="mobile-hidden">Icon support for IE<8</td>
-                                    <td>34991 B</td>
-                                    <td>2994 B</td>
-                                </tr>
-                                <tr>
-                                    <td>print.css</td>
-                                    <td class="mobile-hidden">Print styles</td>
-                                    <td>573 B</td>
-                                    <td>340 B</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                            <table class="outline-header border box-header outline files" summary="Employee Pay Sheet">
+                                <thead>
+                                    <tr>
+                                        <th class="name">File</th>
+                                        <th class="content mobile-hidden">Content</th>
+                                        <th class="minified">Minified</th>
+                                        <th class="gzipped">Gzipped</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>core.css</td>
+                                        <td class="mobile-hidden">Cross-browser rules for building your page structure.</td>
+                                        <td>8705 B</td>
+                                        <td>2677 B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>typography.css</td>
+                                        <td class="mobile-hidden">Font sizes, line heights and other typographical rules</td>
+                                        <td>3057 B</td>
+                                        <td>1149 B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>tables.css</td>
+                                        <td class="mobile-hidden">Classes that can be combined to layout your HTML tables</td>
+                                        <td>1107 B</td>
+                                        <td>370 B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>colors.css</td>
+                                        <td class="mobile-hidden">Text colors, backgrounds and border colors</td>
+                                        <td>5164 B</td>
+                                        <td>1610 B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>modern.css</td>
+                                        <td class="mobile-hidden">Rounded corners, box-shadow and other CSS3 styles</td>
+                                        <td>2935 B</td>
+                                        <td>702 B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>helpers.css</td>
+                                        <td class="mobile-hidden">Generic helper classes</td>
+                                        <td>1367 B</td>
+                                        <td>414 B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>grids.css</td>
+                                        <td class="mobile-hidden">Presentational grid classes</td>
+                                        <td>1971 B</td>
+                                        <td>473 B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>responsive.css</td>
+                                        <td class="mobile-hidden">Responsive support</td>
+                                        <td>2882 B</td>
+                                        <td>631 B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mobile-grids.css</td>
+                                        <td class="mobile-hidden">Mobile specific grid classes</td>
+                                        <td>2970 B</td>
+                                        <td>555 B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>tablet-grids.css</td>
+                                        <td class="mobile-hidden">Tablet specific grid classes</td>
+                                        <td>2992 B</td>
+                                        <td>569 B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>phone-grids.css</td>
+                                        <td class="mobile-hidden">Phone specific grid classes</td>
+                                        <td>2877 B</td>
+                                        <td>550 B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>icons.css</td>
+                                        <td class="mobile-hidden">Icons</td>
+                                        <td>14362 B</td>
+                                        <td>2792 B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>icons-ie7.css</td>
+                                        <td class="mobile-hidden">Icon support for IE<8</td>
+                                        <td>34991 B</td>
+                                        <td>2994 B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>print.css</td>
+                                        <td class="mobile-hidden">Print styles</td>
+                                        <td>573 B</td>
+                                        <td>340 B</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="cell">
-                        <h2>Builds</h2>
-                        <p>Cascade Framework provides you with 4 custom builds, that combine different modules into a single file.</p>
+                    <div class="col">
+                        <div class="cell">
+                            <h2>Builds</h2>
+                            <p>Cascade Framework provides you with 4 custom builds, that combine different modules into a single file.</p>
 
-                        <table class="outline-header border box-header outline files" summary="Employee Pay Sheet">
-                            <thead>
-                                <tr>
-                                    <th class="name">File</th>
-                                    <th class="content mobile-hidden">Content</th>
-                                    <th class="minified">Minified</th>
-                                    <th class="gzipped">Gzipped</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>build-core+typography.css</td>
-                                    <td class="mobile-hidden">Contains only the core and typography modules.</td>
-                                    <td>11521 B</td>
-                                    <td>3540 B</td>
-                                </tr>
-                                <tr>
-                                    <td>build-core+typography+responsive.css</td>
-                                    <td class="mobile-hidden">Adds responsive support.</td>
-                                    <td>14501 B</td>
-                                    <td>4017 B</td>
-                                </tr>
-                                <tr>
-                                    <td>build-full.css</td>
-                                    <td class="mobile-hidden">All modules, except for IE<8 icons and print styles.</td>
-                                    <td>51902 B</td>
-                                    <td>10830 B</td>
-                                </tr>
-                                <tr>
-                                    <td>build-full-no-icons.css</td>
-                                    <td class="mobile-hidden">Full build without icon classes.</td>
-                                    <td>37540 B</td>
-                                    <td>7989 B</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                            <table class="outline-header border box-header outline files" summary="Employee Pay Sheet">
+                                <thead>
+                                    <tr>
+                                        <th class="name">File</th>
+                                        <th class="content mobile-hidden">Content</th>
+                                        <th class="minified">Minified</th>
+                                        <th class="gzipped">Gzipped</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>build-core+typography.css</td>
+                                        <td class="mobile-hidden">Contains only the core and typography modules.</td>
+                                        <td>11732 B</td>
+                                        <td>3563 B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>build-core+typography+responsive.css</td>
+                                        <td class="mobile-hidden">Adds responsive support.</td>
+                                        <td>14614 B</td>
+                                        <td>4022 B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>build-full.css</td>
+                                        <td class="mobile-hidden">All modules, except for IE<8 icons and print styles.</td>
+                                        <td>51072 B</td>
+                                        <td>10694 B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>build-full-no-icons.css</td>
+                                        <td class="mobile-hidden">Full build without icon classes.</td>
+                                        <td>36705 B</td>
+                                        <td>7864 B</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="cell">
-                        <h2>Still not lightweight enough?</h2>
-                        <p>Is Cascade Framework still not lightweight enough to fit your personal needs?
-                            There's now also an even more lightweight version of Cascade Framework.
-                            Check it out <a href="http://jslegers.github.io/cascadeframeworklight/">on Github</a>!</p>
+                    <div class="col">
+                        <div class="cell">
+                            <h2>Still not lightweight enough?</h2>
+                            <p>Is Cascade Framework still not lightweight enough to fit your personal needs?
+                                There's now also an even more lightweight version of Cascade Framework.
+                                Check it out <a href="http://jslegers.github.io/cascadeframeworklight/">on Github</a>!</p>
+                        </div>
                     </div>
-                </div>
                     <div class="col">
                         <div class="cell">
                             <h2>What's next?</h2>

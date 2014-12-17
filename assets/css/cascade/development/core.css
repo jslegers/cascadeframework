@@ -1,106 +1,4 @@
-/*!
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
- *
- *               CASCADE FRAMEWORK 1.0
- *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
- *
- *
- * Copyright 2013, John Slegers
- * Released under the MIT license
- * http://jslegers.github.com/cascadeframework/license.html
- *
- *
- * This means you can use Cascade Framework for any project,
- * whether commercial or not.
- *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
- *
- * 
- * Cascade Framework also contains the following goodies,
- * which all have the same or similar 'permissive licenses :
- *
- *
- * Includes polyfills by Joshua Bell
- * http://www.calormen.com/polyfill/
- * Released in public domain
- *
- *
- * Includes Google ExplorerCanvas
- * https://code.google.com/p/explorercanvas/
- * Released under the Apache 2.0 license
- *
- *
- * Includes Google Prettify
- * https://code.google.com/p/google-code-prettify/
- * Released under the Apache 2.0 license
- *
- *
- * Includes Yepnope
- * http://yepnopejs.com/
- * Released under the WTFPL license
- *
- *
- * Includes Modernizr
- * http://modernizr.com/
- * Released under the MIT license
- *
- *
- * Includes lodash
- * http://lodash.com/
- * Released under the MIT license
- *
- *
- * Includes jQuery
- * http://jquery.com/
- * Released under the MIT license
- *
- *
- * Includes jQuery Easing plugin
- * http://gsgd.co.uk/sandbox/jquery/easing/
- * Released under the BSD license
- *
- *
- * Includes jQuery Flot plugin
- * http://www.flotcharts.org/
- * Released under the MIT license
- *
- *
- * Includes the Font Awesome webfont
- * http://fortawesome.github.com/Font-Awesome/
- * Released under the SIL Open Font License
- *
- *
- *
- *
- *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
- *
- * Cascade Framework was inspired by many articles and projects
- * 
- * Especially these authors are worth mentioning :
- *             
- *             Nicolle Sullivan
- *             Jonathan Snook
- *             Chris Coyier
- *             Eric Meyer
- *             Nicolas Gallagher
- *             Paul Irish
- *             Mark Otto
- *             Jacob Thornton
- *
- *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
- * Date: 2013-03-15
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-*/
-
-
-/* =============================================================================
-   Default display,float and positioning
-   ========================================================================== */
-
-div,main,article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,pre,.nav,.nav a,.width-fill,.width-fit img,blockquote small,address,button,.button,.nav ul,.nav li,.logo {
+div,main,article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,pre,.nav,.nav a,.width-fill,.width-fit img,blockquote small,address,button,.button,.nav ul,.nav li,.logo,.col,.cell {
     display:block;*zoom:1;
 }
 
@@ -116,13 +14,12 @@ audio,canvas,video,img,input,label,textarea,.menu .stat span,.icon,.label,.pipes
     display:inline-block;*display:inline;*zoom:1;
 }
 
-/* micro clearfix (using technique from http://nicolasgallagher.com/micro-clearfix-hack) */
-
 figcaption,div:after,main:after,article:after,aside:after,details:after,figcaption:after,figure:after,footer:after,header:after,
 hgroup:after,nav:after,section:after,pre:after,.nav:after,.nav a:after,.width-fill:after,.width-fit img:after,
 blockquote small:after,address:after,.nav ul:after,.nav li:after {
     clear:both;
 }
+
 
 div:before,div:after,main:before,main:after,article:before,article:after,aside:before,aside:after,details:before,details:after,
 figcaption:before,figcaption:after,figure:before,figure:after,footer:before,footer:after,
@@ -130,7 +27,7 @@ header:before,header:after,hgroup:before,hgroup:after,nav:before,nav:after,secti
 pre:before,pre:after,.nav:before,.nav:after,.nav a:before,.nav a:after,.width-fill:before,.width-fill:after,
 .width-fit img:before,.width-fit img:after,blockquote small:before,blockquote small:after,address:before,address:after,
 .nav ul:before,.nav ul:after,.nav li:before,.nav li:after {
-    content:" "; display:table;
+    content:""; display:table;
 }
 
 li {
@@ -175,7 +72,7 @@ section,article,header,footer,aside,nav,img,.nav,.col,.tabs,.tab-content,.width-
     float:none !important;
 }
 
-sub,sup,body,fieldset,legend,.center,.site-center,.nav li,.nav a,.site-header,.site-header-ghost,.site-footer {
+sub,sup,body,fieldset,legend,.cell,.center,.site-center,.nav li,.nav a,.site-header,.site-header-ghost,.site-footer {
     position:relative;
 }
 
@@ -234,17 +131,13 @@ sub {
     bottom:-0.25em;
 }
 
-/* =============================================================================
-   Default margins and paddings
-   ========================================================================== */
-
 fieldset {
     margin:0 2px;
     padding:0.35em 0.625em 0.75em;
 }
 
 ol.linenums {
-    margin:0 0 0 33px; /* IE indents via margin-left */
+    margin:0 0 0 33px;
 }
 
 .tree ul {
@@ -252,7 +145,7 @@ ol.linenums {
 }
 
 body,blockquote,blockquote p,dl,table,address,pre,p,dd,figure,legend,
-form,button,input,select,textarea,h1,h2,h3,h4,h5,h6,figure img,.nav,.panel .body,.menu .tree ul,.button-group .button {
+form,button,input,select,textarea,h1,h2,h3,h4,h5,h6,ul p, ol p, figure img,.nav,.panel .body,.menu .tree ul,.button-group .button {
     margin:0;
 }
 
@@ -290,10 +183,6 @@ ul ul,ul ol,ol ol,ol ul,.gallery img {
 
 .pipes .stat span {
     margin-top:2px;
-}
-
-.cell > :last-child {
-    margin-bottom :0;
 }
 
 blockquote,dl,table,address {
@@ -427,6 +316,7 @@ input.button,button,button.button {
     *padding:3px 9px 1px;
 }
 
+
 input,textarea,.parsley-error-list,.tags .nav li.disabled,select,.tags .nav a,.icon-button {
     padding:4px;
 }
@@ -497,10 +387,6 @@ blockquote {
     padding-left:9px;
 }
 
-/* =============================================================================
-   Set default height and width
-   ========================================================================== */
-
 .icon-16 {
     width:16px;
 }
@@ -563,9 +449,7 @@ select {
 
 table input {
     width:100%;
-    //width:99%;
     height:18px;
-    //height:98%;
 }
 
 html,body {
@@ -585,10 +469,6 @@ select {
     height:28px;
 }
 
-/* =============================================================================
-   Set default border and size
-   ========================================================================== */
-
 table {
     border-collapse:separate; border-spacing:0; *border-collapse:collapse; empty-cells:show;
 }
@@ -597,7 +477,7 @@ table {
     border-style:none;
 }
 
-main,section,article,header,footer,aside,nav,div,table,col,th,td,img,figure,fieldset,pre,code,abbr,span,ol,ul,li,a,button,input,hr,select,textarea,blockquote,td input,.icon-border,.checkbox,.radio,.datasheet table.body {
+form,main,section,article,header,footer,aside,nav,div,table,col,th,td,img,figure,fieldset,pre,code,abbr,span,ol,ul,li,a,button,input,hr,select,textarea,blockquote,td input,.icon-border,.checkbox,.radio,.datasheet table.body {
     border:0 solid #ccc;
 }
 
@@ -697,11 +577,6 @@ abbr {
     border-style:dotted;
 }
 
-
-/* =============================================================================
-   Set default overflow and resize
-   ========================================================================== */
-
 body,.nav li,ul,ol {
     overflow:visible;
 }
@@ -746,9 +621,6 @@ p {
     text-align:justify;
 }
 
-/* =============================================================================
-   Default list styles,cursors and outline
-   ========================================================================== */
 ul {
     list-style:disc;
 }
@@ -777,10 +649,6 @@ input[type=button],input[type=submit] {
     outline:none;
 }
 
-/* =============================================================================
-   Blockquote reset and other exotic fixes
-   ========================================================================== */
-
 blockquote,q {
     quotes:none;
 }
@@ -802,8 +670,19 @@ img {
     filter:expression(document.execCommand("BackgroundImageCache",false,true));
 }
 
-input[type=search] {
-  -webkit-appearance: none;
+input, button, textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+}
+
+input[type=radio] {
+    -webkit-appearance: radio;
+    -moz-appearance: radio;
 }
 
 button::-moz-focus-inner {
@@ -813,5 +692,3 @@ button::-moz-focus-inner {
 input::-moz-focus-inner {
     border:0; padding:2px;
 }
-
-
