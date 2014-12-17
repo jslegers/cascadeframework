@@ -2,11 +2,11 @@
 
 [![endorse](https://api.coderwall.com/johnslegers/endorsecount.png)](https://coderwall.com/johnslegers) 
 
-# Cascade Framework 1.5
+# Cascade Framework 1.6
 
-Although the overall look and feel are most definitely inspired by Bootstrap, Cascade framework is not just another Bootstrap clone. Where Bootstrap puts its focus on delivering shiny user elements that can be dropped into any project and takes control of your project's overall look-and-feel, Cascade Framework is intended to do the opposite. By splitting your CSS into seperate files based on features rather than selectors as well as by implementing a modifier design pattern inspired by SMACCS and OOCSS, Cascade Framework puts you in control!
+Although the overall look and feel are most definitely inspired by Twitter Bootstrap, Cascade framework is not just another Bootstrap clone. Where Twitter Bootstrap puts its focus on delivering shiny user elements that can be dropped into any project and takes control of your project's overall look-and-feel, Cascade Framework is intended to do the opposite. By splitting your CSS into seperate files based on features rather than selectors as well as by implementing a modifier design pattern inspired by SMACCS and OOCSS, Cascade Framework puts you in control!
 
-Also different from Bootstrap or other CSS Frameworks out there, Cascade Framework can be used for modern browsers and older browsers alike. All features of Cascade Framework support Internet Explorer from IE6 upwards or degrade gracefully. With Cascade Framework you no longer have to choose between supporting only modern browsers or downgrading your design.
+Also different from Twitter Bootstrap or other CSS Frameworks out there, Cascade Framework can be used for modern browsers and older browsers alike. All features of Cascade Framework support Internet Explorer from IE6 upwards or degrade gracefully. With Cascade Framework you no longer have to choose between supporting only modern browsers or downgrading your design.
 
 ![Cascade Framework](http://jslegers.github.io/cascadeframework/screenshot.png)
 

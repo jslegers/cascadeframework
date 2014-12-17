@@ -583,11 +583,11 @@ if ('window' in this && 'document' in this) {
     try { return new ActiveXObject("Msxml2.XMLHTTP"); } catch (e3) { }
     throw new Error("This browser does not support XMLHttpRequest.");
   };
-  XMLHttpRequest.UNSENT = 0;
-  XMLHttpRequest.OPENED = 1;
-  XMLHttpRequest.HEADERS_RECEIVED = 2;
-  XMLHttpRequest.LOADING = 3;
-  XMLHttpRequest.DONE = 4;
+  // XMLHttpRequest.UNSENT = 0;
+  // XMLHttpRequest.OPENED = 1;
+  // XMLHttpRequest.HEADERS_RECEIVED = 2;
+  // XMLHttpRequest.LOADING = 3;
+  // XMLHttpRequest.DONE = 4;
 
   //----------------------------------------------------------------------
   //

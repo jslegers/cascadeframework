@@ -217,10 +217,16 @@
 }
 
 .sitemenu-responsive .left {
-    position: absolute;
+    position: fixed;
     background: #2d3538;
     overflow: hidden;
     width:100%;
+    bottom:0;
+    top:0;
+    margin-top: 55px;
+    border-color: #999;
+    border-width: 2px 0 0 0;
+    opacity: 0.95;
 }
 
 .sitemenu-responsive .icon-align-justify {
@@ -228,7 +234,7 @@
 }
 
 .site-header,.sitemenu-responsive,.sitemenu-responsive .left {
-	z-index:900;	
+    z-index:900;	
 }
 
 @media (max-width:580px) {
