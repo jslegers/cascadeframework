@@ -1014,12 +1014,12 @@ ins,a,.nav a:hover,.button:hover,.collapse-trigger a:hover {
     letter-spacing:1px;
 }
 
-th,td,button,.button,input,select,.radio,.checkbox {
+button,.button,input,select,.radio,.checkbox {
     vertical-align:bottom;
     *vertical-align:middle;
 }
 
-.icon,textarea,td img {
+th,td,.icon,textarea,td img {
     vertical-align:top;
 }
 
