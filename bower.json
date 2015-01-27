@@ -22,7 +22,6 @@
     "bower_components",
     "test",
     "tests",
-    "./*.html",
-    "assets/production"
+    "/*.html"
   ]
 }
