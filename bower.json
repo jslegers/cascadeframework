@@ -6,6 +6,7 @@
     "John Slegers"
   ],
   "description": "CSS framework that puts back the C in CSS",
+  "main": "assets/css/cascade/development/build-full.css",
   "keywords": [
     "css",
     "js"
@@ -20,6 +21,8 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "./*.html",
+    "assets/production"
   ]
 }
