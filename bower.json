@@ -22,6 +22,7 @@
     "bower_components",
     "test",
     "tests",
-    "/*.html"
+    "/*.html",
+    "/*.png"
   ]
 }
