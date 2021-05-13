@@ -1,7 +1,3 @@
-[![Stories in Ready](https://badge.waffle.io/jslegers/cascadeframework.png?label=ready&title=Ready)](https://waffle.io/jslegers/cascadeframework) [![Stories in Ready](http://img.shields.io/badge/version-1.5-green.svg)](http://www.cascade-framework.com/)
-
-[![endorse](https://api.coderwall.com/johnslegers/endorsecount.png)](https://coderwall.com/johnslegers) 
-
 # Cascade Framework 1.6
 
 Although the overall look and feel are most definitely inspired by Twitter Bootstrap, Cascade framework is not just another Bootstrap clone. Where Twitter Bootstrap puts its focus on delivering shiny user elements that can be dropped into any project and takes control of your project's overall look-and-feel, Cascade Framework is intended to do the opposite. By splitting your CSS into separate files based on features rather than selectors as well as by implementing a modifier design pattern inspired by SMACCS and OOCSS, Cascade Framework puts you in control!
